@@ -1,0 +1,25 @@
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Conoce tu ukelele.exe
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Conoce tu ukelele.deps.json
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Conoce tu ukelele.runtimeconfig.json
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Conoce tu ukelele.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Conoce tu ukelele.pdb
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.FormAcordes.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Formbase.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Inicio.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Mastil.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Properties.Resources.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.csproj.GenerateResource.cache
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.AssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.csproj.CopyComplete
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\refint\Conoce tu ukelele.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.pdb
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.genruntimeconfig.cache
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\ref\Conoce tu ukelele.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.Inicio.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.Mastil.resources
