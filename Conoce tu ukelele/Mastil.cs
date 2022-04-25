@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Conoce_tu_ukelele.Forms
-
 {
 	public partial class Mastil : Form
 	{
@@ -22,6 +21,19 @@ namespace Conoce_tu_ukelele.Forms
 		public void CambiarAfinacion(Afinacion afinacion)
 		{
 			ukelele.Afinacion = afinacion;
+			SetNotas();
+		}
+
+		public Mastil()
+		{
+			InitializeComponent();
+			IncializarArrayEtiquetas();
+
+			ukelele = new Ukelele();
+
+			btn_sostenidos.Text = "♯"; // ♭
+			sostenidos = true;
+
 			SetNotas();
 		}
 
@@ -138,5 +150,7 @@ namespace Conoce_tu_ukelele.Forms
 			sostenidos = !sostenidos;
 			SetNotas();
 		}
+
+		
 	}
 }

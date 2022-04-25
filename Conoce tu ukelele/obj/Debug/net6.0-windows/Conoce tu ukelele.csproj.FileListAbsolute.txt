@@ -7,8 +7,6 @@
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.csproj.AssemblyReference.cache
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.FormAcordes.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Formbase.resources
-\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Inicio.resources
-\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Mastil.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Properties.Resources.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.csproj.GenerateResource.cache
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce tu ukelele.GeneratedMSBuildEditorConfig.editorconfig
