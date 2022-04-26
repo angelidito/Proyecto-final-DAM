@@ -1,6 +1,6 @@
 ﻿namespace Conoce_tu_ukelele.Forms
 {
-	partial class Mastil
+	partial class FormMastil
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -127,7 +127,7 @@
 			this.label1.CausesValidation = false;
 			this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label1.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label1.Location = new System.Drawing.Point(337, 303);
+			this.label1.Location = new System.Drawing.Point(338, 303);
 			this.label1.Margin = new System.Windows.Forms.Padding(0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(47, 35);
@@ -166,7 +166,7 @@
 			this.label3.CausesValidation = false;
 			this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label3.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label3.Location = new System.Drawing.Point(559, 305);
+			this.label3.Location = new System.Drawing.Point(558, 305);
 			this.label3.Margin = new System.Windows.Forms.Padding(0);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(49, 37);
@@ -186,7 +186,7 @@
 			this.label4.CausesValidation = false;
 			this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label4.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label4.Location = new System.Drawing.Point(663, 308);
+			this.label4.Location = new System.Drawing.Point(662, 308);
 			this.label4.Margin = new System.Windows.Forms.Padding(0);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(49, 37);
@@ -206,7 +206,7 @@
 			this.label5.CausesValidation = false;
 			this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label5.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label5.Location = new System.Drawing.Point(764, 312);
+			this.label5.Location = new System.Drawing.Point(761, 312);
 			this.label5.Margin = new System.Windows.Forms.Padding(0);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(49, 37);
@@ -226,7 +226,7 @@
 			this.label6.CausesValidation = false;
 			this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label6.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label6.Location = new System.Drawing.Point(862, 315);
+			this.label6.Location = new System.Drawing.Point(860, 315);
 			this.label6.Margin = new System.Windows.Forms.Padding(0);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(49, 37);
@@ -246,7 +246,7 @@
 			this.label7.CausesValidation = false;
 			this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label7.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label7.Location = new System.Drawing.Point(954, 317);
+			this.label7.Location = new System.Drawing.Point(952, 317);
 			this.label7.Margin = new System.Windows.Forms.Padding(0);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(49, 37);
@@ -266,7 +266,7 @@
 			this.label8.CausesValidation = false;
 			this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label8.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label8.Location = new System.Drawing.Point(1042, 319);
+			this.label8.Location = new System.Drawing.Point(1040, 319);
 			this.label8.Margin = new System.Windows.Forms.Padding(0);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(49, 37);
@@ -286,7 +286,7 @@
 			this.label9.CausesValidation = false;
 			this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label9.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label9.Location = new System.Drawing.Point(1129, 321);
+			this.label9.Location = new System.Drawing.Point(1127, 321);
 			this.label9.Margin = new System.Windows.Forms.Padding(0);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(49, 37);
@@ -306,7 +306,7 @@
 			this.label10.CausesValidation = false;
 			this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label10.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label10.Location = new System.Drawing.Point(1211, 323);
+			this.label10.Location = new System.Drawing.Point(1209, 323);
 			this.label10.Margin = new System.Windows.Forms.Padding(0);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(49, 37);
@@ -326,7 +326,7 @@
 			this.label11.CausesValidation = false;
 			this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label11.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label11.Location = new System.Drawing.Point(1292, 326);
+			this.label11.Location = new System.Drawing.Point(1290, 326);
 			this.label11.Margin = new System.Windows.Forms.Padding(0);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(49, 37);
@@ -346,7 +346,7 @@
 			this.label12.CausesValidation = false;
 			this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label12.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label12.Location = new System.Drawing.Point(1371, 326);
+			this.label12.Location = new System.Drawing.Point(1368, 326);
 			this.label12.Margin = new System.Windows.Forms.Padding(0);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(49, 37);
@@ -501,7 +501,7 @@
 			this.label20.CausesValidation = false;
 			this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label20.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label20.Location = new System.Drawing.Point(337, 259);
+			this.label20.Location = new System.Drawing.Point(338, 259);
 			this.label20.Margin = new System.Windows.Forms.Padding(0);
 			this.label20.Name = "label20";
 			this.label20.Size = new System.Drawing.Size(47, 35);
@@ -539,7 +539,7 @@
 			this.label22.CausesValidation = false;
 			this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label22.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label22.Location = new System.Drawing.Point(559, 259);
+			this.label22.Location = new System.Drawing.Point(558, 259);
 			this.label22.Margin = new System.Windows.Forms.Padding(0);
 			this.label22.Name = "label22";
 			this.label22.Size = new System.Drawing.Size(47, 35);
@@ -558,7 +558,7 @@
 			this.label23.CausesValidation = false;
 			this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label23.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label23.Location = new System.Drawing.Point(663, 259);
+			this.label23.Location = new System.Drawing.Point(662, 259);
 			this.label23.Margin = new System.Windows.Forms.Padding(0);
 			this.label23.Name = "label23";
 			this.label23.Size = new System.Drawing.Size(47, 35);
@@ -577,7 +577,7 @@
 			this.label24.CausesValidation = false;
 			this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label24.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label24.Location = new System.Drawing.Point(766, 259);
+			this.label24.Location = new System.Drawing.Point(763, 259);
 			this.label24.Margin = new System.Windows.Forms.Padding(0);
 			this.label24.Name = "label24";
 			this.label24.Size = new System.Drawing.Size(47, 35);
@@ -596,7 +596,7 @@
 			this.label25.CausesValidation = false;
 			this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label25.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label25.Location = new System.Drawing.Point(862, 259);
+			this.label25.Location = new System.Drawing.Point(860, 259);
 			this.label25.Margin = new System.Windows.Forms.Padding(0);
 			this.label25.Name = "label25";
 			this.label25.Size = new System.Drawing.Size(47, 35);
@@ -615,7 +615,7 @@
 			this.label26.CausesValidation = false;
 			this.label26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label26.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label26.Location = new System.Drawing.Point(954, 259);
+			this.label26.Location = new System.Drawing.Point(952, 259);
 			this.label26.Margin = new System.Windows.Forms.Padding(0);
 			this.label26.Name = "label26";
 			this.label26.Size = new System.Drawing.Size(47, 35);
@@ -634,7 +634,7 @@
 			this.label27.CausesValidation = false;
 			this.label27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label27.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label27.Location = new System.Drawing.Point(1044, 259);
+			this.label27.Location = new System.Drawing.Point(1042, 259);
 			this.label27.Margin = new System.Windows.Forms.Padding(0);
 			this.label27.Name = "label27";
 			this.label27.Size = new System.Drawing.Size(47, 35);
@@ -653,7 +653,7 @@
 			this.label28.CausesValidation = false;
 			this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label28.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label28.Location = new System.Drawing.Point(1129, 259);
+			this.label28.Location = new System.Drawing.Point(1127, 259);
 			this.label28.Margin = new System.Windows.Forms.Padding(0);
 			this.label28.Name = "label28";
 			this.label28.Size = new System.Drawing.Size(47, 35);
@@ -672,7 +672,7 @@
 			this.label29.CausesValidation = false;
 			this.label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label29.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label29.Location = new System.Drawing.Point(1213, 259);
+			this.label29.Location = new System.Drawing.Point(1211, 259);
 			this.label29.Margin = new System.Windows.Forms.Padding(0);
 			this.label29.Name = "label29";
 			this.label29.Size = new System.Drawing.Size(47, 35);
@@ -691,7 +691,7 @@
 			this.label30.CausesValidation = false;
 			this.label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label30.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label30.Location = new System.Drawing.Point(1294, 259);
+			this.label30.Location = new System.Drawing.Point(1292, 259);
 			this.label30.Margin = new System.Windows.Forms.Padding(0);
 			this.label30.Name = "label30";
 			this.label30.Size = new System.Drawing.Size(47, 35);
@@ -710,7 +710,7 @@
 			this.label31.CausesValidation = false;
 			this.label31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label31.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label31.Location = new System.Drawing.Point(1371, 259);
+			this.label31.Location = new System.Drawing.Point(1368, 259);
 			this.label31.Margin = new System.Windows.Forms.Padding(0);
 			this.label31.Name = "label31";
 			this.label31.Size = new System.Drawing.Size(47, 35);
@@ -862,7 +862,7 @@
 			this.label39.CausesValidation = false;
 			this.label39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label39.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label39.Location = new System.Drawing.Point(337, 213);
+			this.label39.Location = new System.Drawing.Point(338, 213);
 			this.label39.Margin = new System.Windows.Forms.Padding(0);
 			this.label39.Name = "label39";
 			this.label39.Size = new System.Drawing.Size(47, 35);
@@ -900,7 +900,7 @@
 			this.label41.CausesValidation = false;
 			this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label41.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label41.Location = new System.Drawing.Point(559, 208);
+			this.label41.Location = new System.Drawing.Point(558, 208);
 			this.label41.Margin = new System.Windows.Forms.Padding(0);
 			this.label41.Name = "label41";
 			this.label41.Size = new System.Drawing.Size(47, 35);
@@ -919,7 +919,7 @@
 			this.label42.CausesValidation = false;
 			this.label42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label42.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label42.Location = new System.Drawing.Point(663, 208);
+			this.label42.Location = new System.Drawing.Point(662, 208);
 			this.label42.Margin = new System.Windows.Forms.Padding(0);
 			this.label42.Name = "label42";
 			this.label42.Size = new System.Drawing.Size(47, 35);
@@ -938,7 +938,7 @@
 			this.label43.CausesValidation = false;
 			this.label43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label43.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label43.Location = new System.Drawing.Point(764, 207);
+			this.label43.Location = new System.Drawing.Point(761, 207);
 			this.label43.Margin = new System.Windows.Forms.Padding(0);
 			this.label43.Name = "label43";
 			this.label43.Size = new System.Drawing.Size(47, 35);
@@ -957,7 +957,7 @@
 			this.label44.CausesValidation = false;
 			this.label44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label44.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label44.Location = new System.Drawing.Point(862, 208);
+			this.label44.Location = new System.Drawing.Point(860, 208);
 			this.label44.Margin = new System.Windows.Forms.Padding(0);
 			this.label44.Name = "label44";
 			this.label44.Size = new System.Drawing.Size(47, 35);
@@ -976,7 +976,7 @@
 			this.label45.CausesValidation = false;
 			this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label45.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label45.Location = new System.Drawing.Point(956, 209);
+			this.label45.Location = new System.Drawing.Point(954, 209);
 			this.label45.Margin = new System.Windows.Forms.Padding(0);
 			this.label45.Name = "label45";
 			this.label45.Size = new System.Drawing.Size(47, 35);
@@ -995,7 +995,7 @@
 			this.label46.CausesValidation = false;
 			this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label46.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label46.Location = new System.Drawing.Point(1042, 207);
+			this.label46.Location = new System.Drawing.Point(1040, 207);
 			this.label46.Margin = new System.Windows.Forms.Padding(0);
 			this.label46.Name = "label46";
 			this.label46.Size = new System.Drawing.Size(47, 35);
@@ -1014,7 +1014,7 @@
 			this.label47.CausesValidation = false;
 			this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label47.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label47.Location = new System.Drawing.Point(1129, 205);
+			this.label47.Location = new System.Drawing.Point(1127, 205);
 			this.label47.Margin = new System.Windows.Forms.Padding(0);
 			this.label47.Name = "label47";
 			this.label47.Size = new System.Drawing.Size(47, 35);
@@ -1033,7 +1033,7 @@
 			this.label48.CausesValidation = false;
 			this.label48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label48.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label48.Location = new System.Drawing.Point(1213, 204);
+			this.label48.Location = new System.Drawing.Point(1211, 204);
 			this.label48.Margin = new System.Windows.Forms.Padding(0);
 			this.label48.Name = "label48";
 			this.label48.Size = new System.Drawing.Size(47, 35);
@@ -1052,7 +1052,7 @@
 			this.label49.CausesValidation = false;
 			this.label49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label49.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label49.Location = new System.Drawing.Point(1294, 202);
+			this.label49.Location = new System.Drawing.Point(1292, 202);
 			this.label49.Margin = new System.Windows.Forms.Padding(0);
 			this.label49.Name = "label49";
 			this.label49.Size = new System.Drawing.Size(47, 35);
@@ -1071,7 +1071,7 @@
 			this.label50.CausesValidation = false;
 			this.label50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label50.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label50.Location = new System.Drawing.Point(1373, 200);
+			this.label50.Location = new System.Drawing.Point(1370, 200);
 			this.label50.Margin = new System.Windows.Forms.Padding(0);
 			this.label50.Name = "label50";
 			this.label50.Size = new System.Drawing.Size(47, 35);
@@ -1223,7 +1223,7 @@
 			this.label58.CausesValidation = false;
 			this.label58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label58.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label58.Location = new System.Drawing.Point(337, 168);
+			this.label58.Location = new System.Drawing.Point(338, 168);
 			this.label58.Margin = new System.Windows.Forms.Padding(0);
 			this.label58.Name = "label58";
 			this.label58.Size = new System.Drawing.Size(47, 35);
@@ -1261,7 +1261,7 @@
 			this.label60.CausesValidation = false;
 			this.label60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label60.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label60.Location = new System.Drawing.Point(559, 163);
+			this.label60.Location = new System.Drawing.Point(558, 163);
 			this.label60.Margin = new System.Windows.Forms.Padding(0);
 			this.label60.Name = "label60";
 			this.label60.Size = new System.Drawing.Size(47, 35);
@@ -1280,7 +1280,7 @@
 			this.label61.CausesValidation = false;
 			this.label61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label61.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label61.Location = new System.Drawing.Point(663, 158);
+			this.label61.Location = new System.Drawing.Point(662, 158);
 			this.label61.Margin = new System.Windows.Forms.Padding(0);
 			this.label61.Name = "label61";
 			this.label61.Size = new System.Drawing.Size(47, 35);
@@ -1299,7 +1299,7 @@
 			this.label62.CausesValidation = false;
 			this.label62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label62.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label62.Location = new System.Drawing.Point(764, 156);
+			this.label62.Location = new System.Drawing.Point(761, 156);
 			this.label62.Margin = new System.Windows.Forms.Padding(0);
 			this.label62.Name = "label62";
 			this.label62.Size = new System.Drawing.Size(47, 35);
@@ -1318,7 +1318,7 @@
 			this.label63.CausesValidation = false;
 			this.label63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label63.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label63.Location = new System.Drawing.Point(862, 155);
+			this.label63.Location = new System.Drawing.Point(860, 155);
 			this.label63.Margin = new System.Windows.Forms.Padding(0);
 			this.label63.Name = "label63";
 			this.label63.Size = new System.Drawing.Size(47, 35);
@@ -1337,7 +1337,7 @@
 			this.label64.CausesValidation = false;
 			this.label64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label64.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label64.Location = new System.Drawing.Point(954, 153);
+			this.label64.Location = new System.Drawing.Point(952, 153);
 			this.label64.Margin = new System.Windows.Forms.Padding(0);
 			this.label64.Name = "label64";
 			this.label64.Size = new System.Drawing.Size(47, 35);
@@ -1356,7 +1356,7 @@
 			this.label65.CausesValidation = false;
 			this.label65.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label65.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label65.Location = new System.Drawing.Point(1044, 150);
+			this.label65.Location = new System.Drawing.Point(1042, 150);
 			this.label65.Margin = new System.Windows.Forms.Padding(0);
 			this.label65.Name = "label65";
 			this.label65.Size = new System.Drawing.Size(47, 35);
@@ -1375,7 +1375,7 @@
 			this.label66.CausesValidation = false;
 			this.label66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label66.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label66.Location = new System.Drawing.Point(1131, 147);
+			this.label66.Location = new System.Drawing.Point(1129, 147);
 			this.label66.Margin = new System.Windows.Forms.Padding(0);
 			this.label66.Name = "label66";
 			this.label66.Size = new System.Drawing.Size(47, 35);
@@ -1394,7 +1394,7 @@
 			this.label67.CausesValidation = false;
 			this.label67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label67.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label67.Location = new System.Drawing.Point(1213, 145);
+			this.label67.Location = new System.Drawing.Point(1211, 145);
 			this.label67.Margin = new System.Windows.Forms.Padding(0);
 			this.label67.Name = "label67";
 			this.label67.Size = new System.Drawing.Size(47, 35);
@@ -1413,7 +1413,7 @@
 			this.label68.CausesValidation = false;
 			this.label68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label68.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label68.Location = new System.Drawing.Point(1294, 142);
+			this.label68.Location = new System.Drawing.Point(1292, 142);
 			this.label68.Margin = new System.Windows.Forms.Padding(0);
 			this.label68.Name = "label68";
 			this.label68.Size = new System.Drawing.Size(47, 35);
@@ -1432,7 +1432,7 @@
 			this.label69.CausesValidation = false;
 			this.label69.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.label69.Font = new System.Drawing.Font("Cascadia Mono", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label69.Location = new System.Drawing.Point(1373, 140);
+			this.label69.Location = new System.Drawing.Point(1370, 140);
 			this.label69.Margin = new System.Windows.Forms.Padding(0);
 			this.label69.Name = "label69";
 			this.label69.Size = new System.Drawing.Size(47, 35);
@@ -1590,7 +1590,7 @@
 			this.btn_sostenidos.UseVisualStyleBackColor = false;
 			this.btn_sostenidos.Click += new System.EventHandler(this.btn_sostenidos_Click);
 			// 
-			// Mastil
+			// FormMastil
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1678,7 +1678,7 @@
 			this.DoubleBuffered = true;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-			this.Name = "Mastil";
+			this.Name = "FormMastil";
 			this.Text = "Mastil";
 			this.Load += new System.EventHandler(this.Mastil_Load);
 			this.ResumeLayout(false);

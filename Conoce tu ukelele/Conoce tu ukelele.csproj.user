@@ -8,7 +8,7 @@
     <Compile Update="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Mastil.cs">
+    <Compile Update="FormMastil.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

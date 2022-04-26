@@ -12,11 +12,12 @@ using System.Windows.Forms;
 
 namespace Conoce_tu_ukelele.Forms
 {
-	public partial class Mastil : Form
+	public partial class FormMastil : Form
 	{
-		private Label[,] etiquetas = new Label[4, 19];
-		private Ukelele ukelele = new Ukelele();
-		private bool sostenidos = true;
+		
+		private static Label[,] etiquetas = new Label[4, 19];
+		private static Ukelele ukelele = new Ukelele();
+		private static bool sostenidos = true;
 
 		public void CambiarAfinacion(Afinacion afinacion)
 		{
@@ -24,7 +25,7 @@ namespace Conoce_tu_ukelele.Forms
 			SetNotas();
 		}
 
-		public Mastil()
+		public FormMastil()
 		{
 			InitializeComponent();
 			IncializarArrayEtiquetas();
@@ -37,7 +38,7 @@ namespace Conoce_tu_ukelele.Forms
 			SetNotas();
 		}
 
-		public Mastil(Afinacion afinacion)
+		public FormMastil(Afinacion afinacion)
 		{
 			InitializeComponent();
 			IncializarArrayEtiquetas();
@@ -57,6 +58,11 @@ namespace Conoce_tu_ukelele.Forms
 			for (int i = 0; i < 4; i++)
 				for (int j = 0; j < 19; j++)
 					etiquetas[i, j].Text = NotaParser.GetNote(clave, ukelele.Mastil[i, j]);
+		}
+
+		public bool Sostenido
+		{
+			get { return sostenidos; }
 		}
 
 		private void IncializarArrayEtiquetas()

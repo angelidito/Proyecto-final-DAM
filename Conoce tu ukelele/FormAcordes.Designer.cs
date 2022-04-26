@@ -62,7 +62,7 @@ namespace Conoce_tu_ukelele
 			this.rd_maj7 = new System.Windows.Forms.RadioButton();
 			this.rd_7 = new System.Windows.Forms.RadioButton();
 			this.rd_6 = new System.Windows.Forms.RadioButton();
-			this.rd_naCat = new System.Windows.Forms.RadioButton();
+			this.rd_naColor = new System.Windows.Forms.RadioButton();
 			this.pnlCaregoria = new System.Windows.Forms.Panel();
 			this.rd_5 = new System.Windows.Forms.RadioButton();
 			this.rd_aug = new System.Windows.Forms.RadioButton();
@@ -71,15 +71,16 @@ namespace Conoce_tu_ukelele
 			this.rd_min = new System.Windows.Forms.RadioButton();
 			this.rd_maj = new System.Windows.Forms.RadioButton();
 			this.label1 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
+			this.pnlAdd = new System.Windows.Forms.Panel();
 			this.rd_naAdd = new System.Windows.Forms.RadioButton();
 			this.rd_add9 = new System.Windows.Forms.RadioButton();
+			this.rd_nasus = new System.Windows.Forms.RadioButton();
 			this.pnlRaiz.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.pnlSus.SuspendLayout();
 			this.pnlColor.SuspendLayout();
 			this.pnlCaregoria.SuspendLayout();
-			this.panel2.SuspendLayout();
+			this.pnlAdd.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// contextMenuStrip1
@@ -320,7 +321,7 @@ namespace Conoce_tu_ukelele
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.panel2);
+			this.panel1.Controls.Add(this.pnlAdd);
 			this.panel1.Controls.Add(this.pnlSus);
 			this.panel1.Controls.Add(this.label2);
 			this.panel1.Controls.Add(this.pnlColor);
@@ -334,25 +335,25 @@ namespace Conoce_tu_ukelele
 			// pnlSus
 			// 
 			this.pnlSus.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.pnlSus.Controls.Add(this.rd_nasus);
 			this.pnlSus.Controls.Add(this.rd_sus4);
 			this.pnlSus.Controls.Add(this.rd_sus2);
-			this.pnlSus.Location = new System.Drawing.Point(1102, 3);
+			this.pnlSus.Enabled = false;
+			this.pnlSus.Location = new System.Drawing.Point(1104, 3);
 			this.pnlSus.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlSus.Name = "pnlSus";
 			this.pnlSus.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
-			this.pnlSus.Size = new System.Drawing.Size(168, 161);
+			this.pnlSus.Size = new System.Drawing.Size(168, 185);
 			this.pnlSus.TabIndex = 10004;
 			this.pnlSus.Visible = false;
 			// 
 			// rd_sus4
 			// 
 			this.rd_sus4.AutoSize = true;
-			this.rd_sus4.Checked = true;
-			this.rd_sus4.Location = new System.Drawing.Point(33, 43);
+			this.rd_sus4.Location = new System.Drawing.Point(23, 65);
 			this.rd_sus4.Name = "rd_sus4";
 			this.rd_sus4.Size = new System.Drawing.Size(92, 36);
 			this.rd_sus4.TabIndex = 13;
-			this.rd_sus4.TabStop = true;
 			this.rd_sus4.Text = "sus4";
 			this.rd_sus4.UseVisualStyleBackColor = true;
 			this.rd_sus4.CheckedChanged += new System.EventHandler(this.CheckedChanged);
@@ -360,7 +361,7 @@ namespace Conoce_tu_ukelele
 			// rd_sus2
 			// 
 			this.rd_sus2.AutoSize = true;
-			this.rd_sus2.Location = new System.Drawing.Point(33, 85);
+			this.rd_sus2.Location = new System.Drawing.Point(23, 107);
 			this.rd_sus2.Name = "rd_sus2";
 			this.rd_sus2.Size = new System.Drawing.Size(92, 36);
 			this.rd_sus2.TabIndex = 12;
@@ -388,7 +389,7 @@ namespace Conoce_tu_ukelele
 			this.pnlColor.Controls.Add(this.rd_maj7);
 			this.pnlColor.Controls.Add(this.rd_7);
 			this.pnlColor.Controls.Add(this.rd_6);
-			this.pnlColor.Controls.Add(this.rd_naCat);
+			this.pnlColor.Controls.Add(this.rd_naColor);
 			this.pnlColor.Location = new System.Drawing.Point(820, 3);
 			this.pnlColor.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlColor.Name = "pnlColor";
@@ -421,7 +422,7 @@ namespace Conoce_tu_ukelele
 			// rd_9
 			// 
 			this.rd_9.AutoSize = true;
-			this.rd_9.Location = new System.Drawing.Point(33, 211);
+			this.rd_9.Location = new System.Drawing.Point(141, 169);
 			this.rd_9.Name = "rd_9";
 			this.rd_9.Size = new System.Drawing.Size(58, 36);
 			this.rd_9.TabIndex = 16;
@@ -432,7 +433,7 @@ namespace Conoce_tu_ukelele
 			// rd_maj7
 			// 
 			this.rd_maj7.AutoSize = true;
-			this.rd_maj7.Location = new System.Drawing.Point(141, 169);
+			this.rd_maj7.Location = new System.Drawing.Point(33, 211);
 			this.rd_maj7.Name = "rd_maj7";
 			this.rd_maj7.Size = new System.Drawing.Size(97, 36);
 			this.rd_maj7.TabIndex = 15;
@@ -462,18 +463,18 @@ namespace Conoce_tu_ukelele
 			this.rd_6.UseVisualStyleBackColor = true;
 			this.rd_6.CheckedChanged += new System.EventHandler(this.CheckedChanged);
 			// 
-			// rd_naCat
+			// rd_naColor
 			// 
-			this.rd_naCat.AutoSize = true;
-			this.rd_naCat.Checked = true;
-			this.rd_naCat.Location = new System.Drawing.Point(33, 85);
-			this.rd_naCat.Name = "rd_naCat";
-			this.rd_naCat.Size = new System.Drawing.Size(80, 36);
-			this.rd_naCat.TabIndex = 12;
-			this.rd_naCat.TabStop = true;
-			this.rd_naCat.Text = "n/a";
-			this.rd_naCat.UseVisualStyleBackColor = true;
-			this.rd_naCat.CheckedChanged += new System.EventHandler(this.CheckedChanged);
+			this.rd_naColor.AutoSize = true;
+			this.rd_naColor.Checked = true;
+			this.rd_naColor.Location = new System.Drawing.Point(33, 85);
+			this.rd_naColor.Name = "rd_naColor";
+			this.rd_naColor.Size = new System.Drawing.Size(80, 36);
+			this.rd_naColor.TabIndex = 12;
+			this.rd_naColor.TabStop = true;
+			this.rd_naColor.Text = "n/a";
+			this.rd_naColor.UseVisualStyleBackColor = true;
+			this.rd_naColor.CheckedChanged += new System.EventHandler(this.CheckedChanged);
 			// 
 			// pnlCaregoria
 			// 
@@ -569,24 +570,24 @@ namespace Conoce_tu_ukelele
 			this.label1.TabIndex = 10000;
 			this.label1.Text = "Nota raiz";
 			// 
-			// panel2
+			// pnlAdd
 			// 
-			this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.panel2.Controls.Add(this.rd_naAdd);
-			this.panel2.Controls.Add(this.rd_add9);
-			this.panel2.Location = new System.Drawing.Point(1102, 178);
-			this.panel2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
-			this.panel2.Name = "panel2";
-			this.panel2.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
-			this.panel2.Size = new System.Drawing.Size(168, 159);
-			this.panel2.TabIndex = 10005;
-			this.panel2.Visible = false;
+			this.pnlAdd.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.pnlAdd.Controls.Add(this.rd_naAdd);
+			this.pnlAdd.Controls.Add(this.rd_add9);
+			this.pnlAdd.Location = new System.Drawing.Point(1104, 202);
+			this.pnlAdd.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+			this.pnlAdd.Name = "pnlAdd";
+			this.pnlAdd.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
+			this.pnlAdd.Size = new System.Drawing.Size(169, 134);
+			this.pnlAdd.TabIndex = 10005;
+			this.pnlAdd.Visible = false;
 			// 
 			// rd_naAdd
 			// 
 			this.rd_naAdd.AutoSize = true;
 			this.rd_naAdd.Checked = true;
-			this.rd_naAdd.Location = new System.Drawing.Point(33, 36);
+			this.rd_naAdd.Location = new System.Drawing.Point(23, 23);
 			this.rd_naAdd.Name = "rd_naAdd";
 			this.rd_naAdd.Size = new System.Drawing.Size(80, 36);
 			this.rd_naAdd.TabIndex = 13;
@@ -598,13 +599,26 @@ namespace Conoce_tu_ukelele
 			// rd_add9
 			// 
 			this.rd_add9.AutoSize = true;
-			this.rd_add9.Location = new System.Drawing.Point(33, 78);
+			this.rd_add9.Location = new System.Drawing.Point(23, 65);
 			this.rd_add9.Name = "rd_add9";
 			this.rd_add9.Size = new System.Drawing.Size(98, 36);
 			this.rd_add9.TabIndex = 12;
 			this.rd_add9.Text = "add9";
 			this.rd_add9.UseVisualStyleBackColor = true;
 			this.rd_add9.CheckedChanged += new System.EventHandler(this.CheckedChanged);
+			// 
+			// rd_nasus
+			// 
+			this.rd_nasus.AutoSize = true;
+			this.rd_nasus.Checked = true;
+			this.rd_nasus.Enabled = false;
+			this.rd_nasus.Location = new System.Drawing.Point(23, 23);
+			this.rd_nasus.Name = "rd_nasus";
+			this.rd_nasus.Size = new System.Drawing.Size(80, 36);
+			this.rd_nasus.TabIndex = 14;
+			this.rd_nasus.TabStop = true;
+			this.rd_nasus.Text = "n/a";
+			this.rd_nasus.UseVisualStyleBackColor = true;
 			// 
 			// FormAcordes
 			// 
@@ -628,8 +642,8 @@ namespace Conoce_tu_ukelele
 			this.pnlColor.PerformLayout();
 			this.pnlCaregoria.ResumeLayout(false);
 			this.pnlCaregoria.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
+			this.pnlAdd.ResumeLayout(false);
+			this.pnlAdd.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -670,7 +684,7 @@ namespace Conoce_tu_ukelele
 		private RadioButton rd_maj7;
 		private RadioButton rd_7;
 		private RadioButton rd_6;
-		private RadioButton rd_naCat;
+		private RadioButton rd_naColor;
 		private Label label1;
 		private RadioButton rd_5;
 		private Panel pnlSus;
@@ -679,8 +693,9 @@ namespace Conoce_tu_ukelele
 		private RadioButton rd_maj9;
 		private RadioButton rd_69;
 		private RadioButton rd_bb;
-		private Panel panel2;
+		private Panel pnlAdd;
 		private RadioButton rd_naAdd;
 		private RadioButton rd_add9;
+		private RadioButton rd_nasus;
 	}
 }
