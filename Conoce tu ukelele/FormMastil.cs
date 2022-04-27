@@ -14,10 +14,11 @@ namespace Conoce_tu_ukelele.Forms
 {
 	public partial class FormMastil : Form
 	{
-		
-		private static Label[,] etiquetas = new Label[4, 19];
-		private static Ukelele ukelele = new Ukelele();
-		private static bool sostenidos = true;
+
+		private Label[,] etiquetas = new Label[4, 19];
+		private Ukelele ukelele = new Ukelele();
+		private bool sostenidos = true;
+		private bool mostrarTodo = false;
 
 		public void CambiarAfinacion(Afinacion afinacion)
 		{
@@ -57,12 +58,27 @@ namespace Conoce_tu_ukelele.Forms
 
 			for (int i = 0; i < 4; i++)
 				for (int j = 0; j < 19; j++)
+				{
 					etiquetas[i, j].Text = NotaParser.GetNote(clave, ukelele.Mastil[i, j]);
+					//if (mostrarTodo)
+					//	etiquetas[i, j].Visible = true;
+					//else
+					//	etiquetas[i, j].Visible = false;
+				}
 		}
 
 		public bool Sostenido
 		{
 			get { return sostenidos; }
+			set
+			{
+				if (sostenidos != value)
+				{
+					btn_sostenidos.Text = value ? "♭" : "♯";
+					sostenidos = !sostenidos;
+					SetNotas();
+				}
+			}
 		}
 
 		private void IncializarArrayEtiquetas()
@@ -157,6 +173,20 @@ namespace Conoce_tu_ukelele.Forms
 			SetNotas();
 		}
 
-		
+		public void MostrarNotas(List<int> notas)
+		{
+
+			for (int i = 0; i < 4; i++)
+				for (int j = 0; j < 19; j++)
+				{
+					if (mostrarTodo)
+						etiquetas[i, j].Visible = true;
+					else if (notas.Contains(ukelele.Mastil[i, j]))
+						etiquetas[i, j].Visible = true;
+					else
+						etiquetas[i, j].Visible = false;
+				}
+		}
+
 	}
 }

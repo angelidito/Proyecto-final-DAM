@@ -59,14 +59,14 @@ namespace Conoce_tu_ukelele.Forms
 			// 
 			this.label1.AutoSize = true;
 			this.label1.BackColor = System.Drawing.Color.SteelBlue;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.label1.Font = new System.Drawing.Font("Comic Sans MS", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.label1.Location = new System.Drawing.Point(20, 17);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(723, 63);
+			this.label1.Size = new System.Drawing.Size(560, 74);
 			this.label1.TabIndex = 2;
-			this.label1.Text = "TPV COMICS MRS. LÓPEZ";
+			this.label1.Text = "Conoce tu ukelele :3";
 			// 
 			// Menu
 			// 

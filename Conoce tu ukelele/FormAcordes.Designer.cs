@@ -51,10 +51,18 @@ namespace Conoce_tu_ukelele
 			this.rd_cs = new System.Windows.Forms.RadioButton();
 			this.rd_c = new System.Windows.Forms.RadioButton();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.txtInfo = new System.Windows.Forms.RichTextBox();
+			this.txtNotas = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.pnlAdd = new System.Windows.Forms.Panel();
+			this.rd_naAdd = new System.Windows.Forms.RadioButton();
+			this.rd_add9 = new System.Windows.Forms.RadioButton();
 			this.pnlSus = new System.Windows.Forms.Panel();
+			this.rd_nasus = new System.Windows.Forms.RadioButton();
 			this.rd_sus4 = new System.Windows.Forms.RadioButton();
 			this.rd_sus2 = new System.Windows.Forms.RadioButton();
-			this.label2 = new System.Windows.Forms.Label();
+			this.lblAcorde = new System.Windows.Forms.Label();
 			this.pnlColor = new System.Windows.Forms.Panel();
 			this.rd_maj9 = new System.Windows.Forms.RadioButton();
 			this.rd_69 = new System.Windows.Forms.RadioButton();
@@ -70,17 +78,13 @@ namespace Conoce_tu_ukelele
 			this.rd_sus = new System.Windows.Forms.RadioButton();
 			this.rd_min = new System.Windows.Forms.RadioButton();
 			this.rd_maj = new System.Windows.Forms.RadioButton();
-			this.label1 = new System.Windows.Forms.Label();
-			this.pnlAdd = new System.Windows.Forms.Panel();
-			this.rd_naAdd = new System.Windows.Forms.RadioButton();
-			this.rd_add9 = new System.Windows.Forms.RadioButton();
-			this.rd_nasus = new System.Windows.Forms.RadioButton();
 			this.pnlRaiz.SuspendLayout();
 			this.panel1.SuspendLayout();
+			this.panel2.SuspendLayout();
+			this.pnlAdd.SuspendLayout();
 			this.pnlSus.SuspendLayout();
 			this.pnlColor.SuspendLayout();
 			this.pnlCaregoria.SuspendLayout();
-			this.pnlAdd.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// contextMenuStrip1
@@ -321,9 +325,10 @@ namespace Conoce_tu_ukelele
 			// 
 			// panel1
 			// 
+			this.panel1.Controls.Add(this.panel2);
 			this.panel1.Controls.Add(this.pnlAdd);
 			this.panel1.Controls.Add(this.pnlSus);
-			this.panel1.Controls.Add(this.label2);
+			this.panel1.Controls.Add(this.lblAcorde);
 			this.panel1.Controls.Add(this.pnlColor);
 			this.panel1.Controls.Add(this.pnlCaregoria);
 			this.panel1.Controls.Add(this.pnlRaiz);
@@ -332,6 +337,88 @@ namespace Conoce_tu_ukelele
 			this.panel1.Size = new System.Drawing.Size(2000, 340);
 			this.panel1.TabIndex = 10001;
 			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.panel2.Controls.Add(this.txtInfo);
+			this.panel2.Controls.Add(this.txtNotas);
+			this.panel2.Controls.Add(this.label1);
+			this.panel2.Enabled = false;
+			this.panel2.ForeColor = System.Drawing.Color.Black;
+			this.panel2.Location = new System.Drawing.Point(1377, 3);
+			this.panel2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+			this.panel2.Name = "panel2";
+			this.panel2.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
+			this.panel2.Size = new System.Drawing.Size(610, 333);
+			this.panel2.TabIndex = 10005;
+			// 
+			// txtInfo
+			// 
+			this.txtInfo.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtInfo.ForeColor = System.Drawing.Color.Black;
+			this.txtInfo.Location = new System.Drawing.Point(18, 127);
+			this.txtInfo.Name = "txtInfo";
+			this.txtInfo.Size = new System.Drawing.Size(566, 191);
+			this.txtInfo.TabIndex = 10007;
+			this.txtInfo.Text = "";
+			// 
+			// txtNotas
+			// 
+			this.txtNotas.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtNotas.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.txtNotas.ForeColor = System.Drawing.Color.Black;
+			this.txtNotas.Location = new System.Drawing.Point(18, 60);
+			this.txtNotas.Name = "txtNotas";
+			this.txtNotas.Size = new System.Drawing.Size(566, 45);
+			this.txtNotas.TabIndex = 10006;
+			this.txtNotas.Text = " C E G";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label1.Location = new System.Drawing.Point(18, 19);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(251, 41);
+			this.label1.TabIndex = 10000;
+			this.label1.Text = "Notas del acorde:";
+			// 
+			// pnlAdd
+			// 
+			this.pnlAdd.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.pnlAdd.Controls.Add(this.rd_naAdd);
+			this.pnlAdd.Controls.Add(this.rd_add9);
+			this.pnlAdd.Location = new System.Drawing.Point(1189, 202);
+			this.pnlAdd.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+			this.pnlAdd.Name = "pnlAdd";
+			this.pnlAdd.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
+			this.pnlAdd.Size = new System.Drawing.Size(169, 134);
+			this.pnlAdd.TabIndex = 10005;
+			// 
+			// rd_naAdd
+			// 
+			this.rd_naAdd.AutoSize = true;
+			this.rd_naAdd.Checked = true;
+			this.rd_naAdd.Location = new System.Drawing.Point(23, 23);
+			this.rd_naAdd.Name = "rd_naAdd";
+			this.rd_naAdd.Size = new System.Drawing.Size(80, 36);
+			this.rd_naAdd.TabIndex = 13;
+			this.rd_naAdd.TabStop = true;
+			this.rd_naAdd.Text = "n/a";
+			this.rd_naAdd.UseVisualStyleBackColor = true;
+			this.rd_naAdd.CheckedChanged += new System.EventHandler(this.CheckedChanged);
+			// 
+			// rd_add9
+			// 
+			this.rd_add9.AutoSize = true;
+			this.rd_add9.Location = new System.Drawing.Point(23, 65);
+			this.rd_add9.Name = "rd_add9";
+			this.rd_add9.Size = new System.Drawing.Size(98, 36);
+			this.rd_add9.TabIndex = 12;
+			this.rd_add9.Text = "add9";
+			this.rd_add9.UseVisualStyleBackColor = true;
+			this.rd_add9.CheckedChanged += new System.EventHandler(this.CheckedChanged);
+			// 
 			// pnlSus
 			// 
 			this.pnlSus.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -339,13 +426,25 @@ namespace Conoce_tu_ukelele
 			this.pnlSus.Controls.Add(this.rd_sus4);
 			this.pnlSus.Controls.Add(this.rd_sus2);
 			this.pnlSus.Enabled = false;
-			this.pnlSus.Location = new System.Drawing.Point(1104, 3);
+			this.pnlSus.Location = new System.Drawing.Point(1189, 3);
 			this.pnlSus.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlSus.Name = "pnlSus";
 			this.pnlSus.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
 			this.pnlSus.Size = new System.Drawing.Size(168, 185);
 			this.pnlSus.TabIndex = 10004;
-			this.pnlSus.Visible = false;
+			// 
+			// rd_nasus
+			// 
+			this.rd_nasus.AutoSize = true;
+			this.rd_nasus.Checked = true;
+			this.rd_nasus.Enabled = false;
+			this.rd_nasus.Location = new System.Drawing.Point(23, 23);
+			this.rd_nasus.Name = "rd_nasus";
+			this.rd_nasus.Size = new System.Drawing.Size(80, 36);
+			this.rd_nasus.TabIndex = 14;
+			this.rd_nasus.TabStop = true;
+			this.rd_nasus.Text = "n/a";
+			this.rd_nasus.UseVisualStyleBackColor = true;
 			// 
 			// rd_sus4
 			// 
@@ -369,16 +468,17 @@ namespace Conoce_tu_ukelele
 			this.rd_sus2.UseVisualStyleBackColor = true;
 			this.rd_sus2.CheckedChanged += new System.EventHandler(this.CheckedChanged);
 			// 
-			// label2
+			// lblAcorde
 			// 
-			this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.label2.Font = new System.Drawing.Font("Cascadia Code", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label2.Location = new System.Drawing.Point(610, 136);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(197, 57);
-			this.label2.TabIndex = 10004;
-			this.label2.Text = "ldkl";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblAcorde.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.lblAcorde.Font = new System.Drawing.Font("Cascadia Code", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.lblAcorde.ForeColor = System.Drawing.Color.Black;
+			this.lblAcorde.Location = new System.Drawing.Point(597, 136);
+			this.lblAcorde.Name = "lblAcorde";
+			this.lblAcorde.Size = new System.Drawing.Size(272, 57);
+			this.lblAcorde.TabIndex = 10004;
+			this.lblAcorde.Text = "C";
+			this.lblAcorde.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// pnlColor
 			// 
@@ -390,11 +490,11 @@ namespace Conoce_tu_ukelele
 			this.pnlColor.Controls.Add(this.rd_7);
 			this.pnlColor.Controls.Add(this.rd_6);
 			this.pnlColor.Controls.Add(this.rd_naColor);
-			this.pnlColor.Location = new System.Drawing.Point(820, 3);
+			this.pnlColor.Location = new System.Drawing.Point(869, 3);
 			this.pnlColor.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlColor.Name = "pnlColor";
 			this.pnlColor.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
-			this.pnlColor.Size = new System.Drawing.Size(264, 334);
+			this.pnlColor.Size = new System.Drawing.Size(300, 334);
 			this.pnlColor.TabIndex = 10003;
 			// 
 			// rd_maj9
@@ -560,72 +660,12 @@ namespace Conoce_tu_ukelele
 			this.rd_maj.UseVisualStyleBackColor = true;
 			this.rd_maj.CheckedChanged += new System.EventHandler(this.CheckedChanged);
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label1.Location = new System.Drawing.Point(126, 94);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(137, 41);
-			this.label1.TabIndex = 10000;
-			this.label1.Text = "Nota raiz";
-			// 
-			// pnlAdd
-			// 
-			this.pnlAdd.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.pnlAdd.Controls.Add(this.rd_naAdd);
-			this.pnlAdd.Controls.Add(this.rd_add9);
-			this.pnlAdd.Location = new System.Drawing.Point(1104, 202);
-			this.pnlAdd.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
-			this.pnlAdd.Name = "pnlAdd";
-			this.pnlAdd.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
-			this.pnlAdd.Size = new System.Drawing.Size(169, 134);
-			this.pnlAdd.TabIndex = 10005;
-			this.pnlAdd.Visible = false;
-			// 
-			// rd_naAdd
-			// 
-			this.rd_naAdd.AutoSize = true;
-			this.rd_naAdd.Checked = true;
-			this.rd_naAdd.Location = new System.Drawing.Point(23, 23);
-			this.rd_naAdd.Name = "rd_naAdd";
-			this.rd_naAdd.Size = new System.Drawing.Size(80, 36);
-			this.rd_naAdd.TabIndex = 13;
-			this.rd_naAdd.TabStop = true;
-			this.rd_naAdd.Text = "n/a";
-			this.rd_naAdd.UseVisualStyleBackColor = true;
-			this.rd_naAdd.CheckedChanged += new System.EventHandler(this.CheckedChanged);
-			// 
-			// rd_add9
-			// 
-			this.rd_add9.AutoSize = true;
-			this.rd_add9.Location = new System.Drawing.Point(23, 65);
-			this.rd_add9.Name = "rd_add9";
-			this.rd_add9.Size = new System.Drawing.Size(98, 36);
-			this.rd_add9.TabIndex = 12;
-			this.rd_add9.Text = "add9";
-			this.rd_add9.UseVisualStyleBackColor = true;
-			this.rd_add9.CheckedChanged += new System.EventHandler(this.CheckedChanged);
-			// 
-			// rd_nasus
-			// 
-			this.rd_nasus.AutoSize = true;
-			this.rd_nasus.Checked = true;
-			this.rd_nasus.Enabled = false;
-			this.rd_nasus.Location = new System.Drawing.Point(23, 23);
-			this.rd_nasus.Name = "rd_nasus";
-			this.rd_nasus.Size = new System.Drawing.Size(80, 36);
-			this.rd_nasus.TabIndex = 14;
-			this.rd_nasus.TabStop = true;
-			this.rd_nasus.Text = "n/a";
-			this.rd_nasus.UseVisualStyleBackColor = true;
-			// 
 			// FormAcordes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(2227, 1115);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.pnl_mastil);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -636,16 +676,17 @@ namespace Conoce_tu_ukelele
 			this.pnlRaiz.ResumeLayout(false);
 			this.pnlRaiz.PerformLayout();
 			this.panel1.ResumeLayout(false);
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
+			this.pnlAdd.ResumeLayout(false);
+			this.pnlAdd.PerformLayout();
 			this.pnlSus.ResumeLayout(false);
 			this.pnlSus.PerformLayout();
 			this.pnlColor.ResumeLayout(false);
 			this.pnlColor.PerformLayout();
 			this.pnlCaregoria.ResumeLayout(false);
 			this.pnlCaregoria.PerformLayout();
-			this.pnlAdd.ResumeLayout(false);
-			this.pnlAdd.PerformLayout();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -678,7 +719,7 @@ namespace Conoce_tu_ukelele
 		private RadioButton rd_sus;
 		private RadioButton rd_min;
 		private RadioButton rd_maj;
-		private Label label2;
+		private Label lblAcorde;
 		private Panel pnlColor;
 		private RadioButton rd_9;
 		private RadioButton rd_maj7;
@@ -697,5 +738,8 @@ namespace Conoce_tu_ukelele
 		private RadioButton rd_naAdd;
 		private RadioButton rd_add9;
 		private RadioButton rd_nasus;
+		private TextBox txtNotas;
+		private Panel panel2;
+		private RichTextBox txtInfo;
 	}
 }

@@ -1,64 +1,123 @@
 ﻿using Conoce_tu_ukelele.Forms;
-
+using Conoce_tu_ukelele.Modelos;
+using System.Collections;
 
 namespace Conoce_tu_ukelele
 {
 	public partial class FormAcordes : Form
 	{
-		private ArrayList<int> notas = new ArrayList<int>();
+		private List<int> notas = new List<int>();
+		private FormMastil mastil;
+		private String acorde = "";
+
 		public FormAcordes()
 		{
 			InitializeComponent();
-			FormMastil mastil = new FormMastil();
-			mastil.TopLevel = false;
+
+			mastil = new FormMastil
+			{
+				TopLevel = false
+			};
+
 			pnl_mastil.Controls.Add(mastil);
 			mastil.Show();
 		}
 
 		private void FormAcordes_Load(object sender, EventArgs e)
 		{
-
+			CheckedChanged(null,null);
 		}
 
-		//  ♯ ♭
+
 		private String GetRaiz()
 		{
 			String raiz;
 
 			if (rd_a.Checked)
+			{
 				raiz = "A";
+				notas.Add(9);
+			}
 			else if (rd_b.Checked)
+			{
 				raiz = "B";
+				notas.Add(11);
+			}
 			else if (rd_c.Checked)
+			{
 				raiz = "C";
+				notas.Add(0);
+			}
 			else if (rd_d.Checked)
+			{
 				raiz = "D";
+				notas.Add(2);
+			}
 			else if (rd_e.Checked)
+			{
 				raiz = "E";
+				notas.Add(4);
+			}
 			else if (rd_f.Checked)
+			{
 				raiz = "F";
+				notas.Add(5);
+			}
 			else if (rd_g.Checked)
+			{
 				raiz = "G";
+				notas.Add(7);
+			}
 			else if (rd_as.Checked)
+			{
 				raiz = "A♯";
+				notas.Add(10);
+			}
 			else if (rd_cs.Checked)
+			{
 				raiz = "C♯";
+				notas.Add(1);
+			}
 			else if (rd_ds.Checked)
+			{
 				raiz = "D♯";
+				notas.Add(3);
+			}
 			else if (rd_fs.Checked)
+			{
 				raiz = "F♯";
+				notas.Add(6);
+			}
 			else if (rd_gb.Checked)
+			{
 				raiz = "G♯";
+				notas.Add(8);
+			}
 			else if (rd_ab.Checked)
+			{
 				raiz = "A♭";
+				notas.Add(8);
+			}
 			else if (rd_bb.Checked)
+			{
 				raiz = "B♭";
+				notas.Add(10);
+			}
 			else if (rd_db.Checked)
+			{
 				raiz = "D♭";
+				notas.Add(1);
+			}
 			else if (rd_eb.Checked)
+			{
 				raiz = "E♭";
+				notas.Add(3);
+			}
 			else if (rd_gb.Checked)
+			{
 				raiz = "G♭";
+				notas.Add(6);
+			}
 			else
 				raiz = "???";
 
@@ -85,13 +144,29 @@ namespace Conoce_tu_ukelele
 				rd_nasus.Checked = true;
 
 				if (rd_maj.Checked)
+				{
 					categoria = "maj";
+					notas.Add(4);
+					notas.Add(7);
+				}
 				else if (rd_min.Checked)
+				{
 					categoria = "min";
+					notas.Add(3);
+					notas.Add(7);
+				}
 				else if (rd_dim.Checked)
+				{
 					categoria = "dim";
+					notas.Add(3);
+					notas.Add(6);
+				}
 				else if (rd_aug.Checked)
+				{
 					categoria = "aug";
+					notas.Add(4);
+					notas.Add(8);
+				}
 				else if (rd_5.Checked)
 				{
 					pnlColor.Enabled = false;
@@ -99,8 +174,7 @@ namespace Conoce_tu_ukelele
 					categoria = "5";
 					rd_naColor.Checked = true;
 					rd_naAdd.Checked = true;
-					cantidadNotas-=1 ;
-
+					notas.Add(7);
 				}
 				else
 					categoria = "???";
@@ -116,23 +190,43 @@ namespace Conoce_tu_ukelele
 			{
 				pnlAdd.Enabled = false;
 				rd_naAdd.Checked = true;
-				cantidadNotas +=2;
 			}
 
 			String color;
 
 			if (rd_6.Checked)
+			{
 				color = "6";
+				notas.Add(9);
+			}
 			else if (rd_7.Checked)
+			{
 				color = "7";
+				notas.Add(10);
+			}
 			else if (rd_maj7.Checked)
+			{
 				color = "maj7";
+				notas.Add(11);
+			}
 			else if (rd_69.Checked)
-				color = "69";
+			{
+				color = "6/9";
+				notas.Add(9);
+				notas.Add(2);
+			}
 			else if (rd_9.Checked)
+			{
 				color = "9";
+				notas.Add(10);
+				notas.Add(2);
+			}
 			else if (rd_maj9.Checked)
+			{
 				color = "maj9";
+				notas.Add(11);
+				notas.Add(2);
+			}
 			else
 				color = "";
 
@@ -144,9 +238,17 @@ namespace Conoce_tu_ukelele
 			String n;
 
 			if (rd_sus2.Checked)
-				n = "2";
+			{
+				n = "sus2";
+				notas.Add(2);
+				notas.Add(7);
+			}
 			else if (rd_sus4.Checked)
-				n = "4";
+			{
+				n = "sus4";
+				notas.Add(5);
+				notas.Add(7);
+			}
 			else
 				n = "";
 
@@ -158,16 +260,19 @@ namespace Conoce_tu_ukelele
 			String add;
 
 			if (rd_add9.Checked)
-				add = "2";
+			{
+				add = "add9";
+				notas.Add(2);
+			}
 			else
 				add = "";
 
 			return add;
 		}
-
-		private void CheckedChanged(object sender, EventArgs e)
+		private string GetAcorde()
 		{
-			cantidadNotas = 3;
+			notas.Clear();
+
 			String acorde;
 			String raiz = GetRaiz();
 			String categoria = GetCategoria();
@@ -175,16 +280,70 @@ namespace Conoce_tu_ukelele
 			String color = GetColor();
 			String add = GetAdd();
 
-			if (String.Compare(categoria, "maj") == 0)
+			if (String.Compare(categoria, "maj") == 0 || String.Compare(categoria, "sus") == 0)
 				categoria = "";
-			else if (String.Compare(categoria, "sus") != 0 && String.Compare(categoria, "5") != 0)
+			else if (String.Compare(categoria, "5") != 0)
 			{
 				if (String.Compare(color, "maj7") == 0)
-					categoria = "Maj7";
-				if (String.Compare(color, "maj7") == 0)
-					categoria = "Maj9";
+					color = "Maj7";
+				if (String.Compare(color, "maj9") == 0)
+					color = "Maj9";
 			}
-			acorde = raiz + categoria + susN + color + add;
+
+			acorde = raiz + categoria + color + susN + add;
+
+			return acorde;
+		}
+
+		//  ♯ ♭
+		private void CheckedChanged(object sender, EventArgs e)
+		{
+			// FormAcordes
+			acorde = GetAcorde();
+
+			lblAcorde.Text = acorde;
+
+			MostrarDatos();
+
+			// FormMastil
+			if (acorde.Contains('♯'))
+				mastil.Sostenido = true;
+			else if (acorde.Contains('♭'))
+				mastil.Sostenido = false;
+
+			mastil.MostrarNotas(notas);
+
+		}
+
+
+		private void MostrarDatos()
+		{
+			txtNotas.Clear();
+
+			txtNotas.Text += " " + NotaParser.GetNote(acorde, notas[0]);
+
+			for (int i = 1; i < notas.Count; i++)
+			{
+				notas[i] = (notas[i] + notas[0])% 12;
+				txtNotas.Text += " " + NotaParser.GetNote(acorde, notas[i]);
+			}
+
+			if (notas.Count > 4)
+			{
+				int exceso = notas.Count - 4;
+				String textoAux = exceso == 1 ? "nota no se podrá tocar" : "notas no se podrán tocar";
+				txtInfo.Text = String.Format(
+					"El acorde selecionado tiene {0} notas, por lo que {1} {2}. Se recomienda que sean {3} o {4},",
+					notas.Count,
+					exceso,
+					textoAux,
+					notas[1],
+					notas[2]
+					);
+			}
+			else
+				txtInfo.Clear();
+
 		}
 	}
 }
