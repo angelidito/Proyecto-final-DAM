@@ -6,18 +6,16 @@ namespace Conoce_tu_ukelele
 {
 	public partial class FormAcordes : Form
 	{
-		private List<int> notas = new List<int>();
-		private FormMastil mastil;
-		private String acorde = "";
+		private readonly List<int> notas = new();
+		private string acorde = "";
+		private FormMastil mastil= new()
+		{
+			TopLevel = false
+		};
 
 		public FormAcordes()
 		{
 			InitializeComponent();
-
-			mastil = new FormMastil
-			{
-				TopLevel = false
-			};
 
 			pnl_mastil.Controls.Add(mastil);
 			mastil.Show();
@@ -29,9 +27,9 @@ namespace Conoce_tu_ukelele
 		}
 
 
-		private String GetRaiz()
+		private string GetRaiz()
 		{
-			String raiz;
+			string raiz;
 
 			if (rd_a.Checked)
 			{
@@ -88,7 +86,7 @@ namespace Conoce_tu_ukelele
 				raiz = "F♯";
 				notas.Add(6);
 			}
-			else if (rd_gb.Checked)
+			else if (rd_gs.Checked)
 			{
 				raiz = "G♯";
 				notas.Add(8);
@@ -124,9 +122,9 @@ namespace Conoce_tu_ukelele
 			return raiz;
 		}
 
-		private String GetCategoria()
+		private string GetCategoria()
 		{
-			String categoria;
+			string categoria;
 
 			pnlColor.Enabled = true;
 			pnlAdd.Enabled = true;
@@ -183,7 +181,7 @@ namespace Conoce_tu_ukelele
 			return categoria;
 		}
 
-		private String GetColor()
+		private string GetColor()
 		{
 			pnlAdd.Enabled = true;
 			if (rd_69.Checked || rd_9.Checked || rd_maj9.Checked)
@@ -192,7 +190,7 @@ namespace Conoce_tu_ukelele
 				rd_naAdd.Checked = true;
 			}
 
-			String color;
+			string color;
 
 			if (rd_6.Checked)
 			{
@@ -233,9 +231,9 @@ namespace Conoce_tu_ukelele
 			return color;
 		}
 
-		private String GetSusN()
+		private string GetSusN()
 		{
-			String n;
+			string n;
 
 			if (rd_sus2.Checked)
 			{
@@ -255,9 +253,9 @@ namespace Conoce_tu_ukelele
 			return n;
 		}
 
-		private String GetAdd()
+		private string GetAdd()
 		{
-			String add;
+			string add;
 
 			if (rd_add9.Checked)
 			{
@@ -273,20 +271,20 @@ namespace Conoce_tu_ukelele
 		{
 			notas.Clear();
 
-			String acorde;
-			String raiz = GetRaiz();
-			String categoria = GetCategoria();
-			String susN = GetSusN();
-			String color = GetColor();
-			String add = GetAdd();
+			string acorde;
+			string raiz = GetRaiz();
+			string categoria = GetCategoria();
+			string susN = GetSusN();
+			string color = GetColor();
+			string add = GetAdd();
 
-			if (String.Compare(categoria, "maj") == 0 || String.Compare(categoria, "sus") == 0)
+			if (string.Compare(categoria, "maj") == 0 || string.Compare(categoria, "sus") == 0)
 				categoria = "";
-			else if (String.Compare(categoria, "5") != 0)
+			else if (string.Compare(categoria, "5") != 0)
 			{
-				if (String.Compare(color, "maj7") == 0)
+				if (string.Compare(color, "maj7") == 0)
 					color = "Maj7";
-				if (String.Compare(color, "maj9") == 0)
+				if (string.Compare(color, "maj9") == 0)
 					color = "Maj9";
 			}
 
@@ -319,6 +317,7 @@ namespace Conoce_tu_ukelele
 		private void MostrarDatos()
 		{
 			txtNotas.Clear();
+			txtInfo.Clear();
 
 			txtNotas.Text += " " + NotaParser.GetNote(acorde, notas[0]);
 
@@ -331,8 +330,8 @@ namespace Conoce_tu_ukelele
 			if (notas.Count > 4)
 			{
 				int exceso = notas.Count - 4;
-				String textoAux = exceso == 1 ? "nota no se podrá tocar" : "notas no se podrán tocar";
-				txtInfo.Text = String.Format(
+				string textoAux = exceso == 1 ? "nota no se podrá tocar" : "notas no se podrán tocar";
+				txtInfo.Text = string.Format(
 					"El acorde selecionado tiene {0} notas, por lo que {1} {2}. Se recomienda que sean {3} o {4},",
 					notas.Count,
 					exceso,
@@ -341,8 +340,8 @@ namespace Conoce_tu_ukelele
 					notas[2]
 					);
 			}
-			else
-				txtInfo.Clear();
+			
+				
 
 		}
 	}

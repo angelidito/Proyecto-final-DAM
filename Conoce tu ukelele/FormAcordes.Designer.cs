@@ -95,7 +95,6 @@ namespace Conoce_tu_ukelele
 			// 
 			// pnl_mastil
 			// 
-			this.pnl_mastil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
 			this.pnl_mastil.Location = new System.Drawing.Point(116, 536);
 			this.pnl_mastil.Margin = new System.Windows.Forms.Padding(0);
 			this.pnl_mastil.Name = "pnl_mastil";
@@ -122,7 +121,7 @@ namespace Conoce_tu_ukelele
 			this.pnlRaiz.Controls.Add(this.rd_d);
 			this.pnlRaiz.Controls.Add(this.rd_cs);
 			this.pnlRaiz.Controls.Add(this.rd_c);
-			this.pnlRaiz.Location = new System.Drawing.Point(15, 3);
+			this.pnlRaiz.Location = new System.Drawing.Point(0, 3);
 			this.pnlRaiz.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlRaiz.Name = "pnlRaiz";
 			this.pnlRaiz.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
@@ -345,7 +344,7 @@ namespace Conoce_tu_ukelele
 			this.panel2.Controls.Add(this.label1);
 			this.panel2.Enabled = false;
 			this.panel2.ForeColor = System.Drawing.Color.Black;
-			this.panel2.Location = new System.Drawing.Point(1377, 3);
+			this.panel2.Location = new System.Drawing.Point(1390, 3);
 			this.panel2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.panel2.Name = "panel2";
 			this.panel2.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
@@ -388,7 +387,7 @@ namespace Conoce_tu_ukelele
 			this.pnlAdd.BackColor = System.Drawing.Color.LightSteelBlue;
 			this.pnlAdd.Controls.Add(this.rd_naAdd);
 			this.pnlAdd.Controls.Add(this.rd_add9);
-			this.pnlAdd.Location = new System.Drawing.Point(1189, 202);
+			this.pnlAdd.Location = new System.Drawing.Point(1202, 202);
 			this.pnlAdd.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlAdd.Name = "pnlAdd";
 			this.pnlAdd.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
@@ -426,7 +425,7 @@ namespace Conoce_tu_ukelele
 			this.pnlSus.Controls.Add(this.rd_sus4);
 			this.pnlSus.Controls.Add(this.rd_sus2);
 			this.pnlSus.Enabled = false;
-			this.pnlSus.Location = new System.Drawing.Point(1189, 3);
+			this.pnlSus.Location = new System.Drawing.Point(1202, 3);
 			this.pnlSus.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlSus.Name = "pnlSus";
 			this.pnlSus.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
@@ -471,11 +470,12 @@ namespace Conoce_tu_ukelele
 			// lblAcorde
 			// 
 			this.lblAcorde.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.lblAcorde.BackColor = System.Drawing.Color.LightSteelBlue;
 			this.lblAcorde.Font = new System.Drawing.Font("Cascadia Code", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.lblAcorde.ForeColor = System.Drawing.Color.Black;
-			this.lblAcorde.Location = new System.Drawing.Point(597, 136);
+			this.lblAcorde.Location = new System.Drawing.Point(596, 126);
 			this.lblAcorde.Name = "lblAcorde";
-			this.lblAcorde.Size = new System.Drawing.Size(272, 57);
+			this.lblAcorde.Size = new System.Drawing.Size(272, 80);
 			this.lblAcorde.TabIndex = 10004;
 			this.lblAcorde.Text = "C";
 			this.lblAcorde.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -490,7 +490,7 @@ namespace Conoce_tu_ukelele
 			this.pnlColor.Controls.Add(this.rd_7);
 			this.pnlColor.Controls.Add(this.rd_6);
 			this.pnlColor.Controls.Add(this.rd_naColor);
-			this.pnlColor.Location = new System.Drawing.Point(869, 3);
+			this.pnlColor.Location = new System.Drawing.Point(882, 3);
 			this.pnlColor.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlColor.Name = "pnlColor";
 			this.pnlColor.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
@@ -585,7 +585,7 @@ namespace Conoce_tu_ukelele
 			this.pnlCaregoria.Controls.Add(this.rd_sus);
 			this.pnlCaregoria.Controls.Add(this.rd_min);
 			this.pnlCaregoria.Controls.Add(this.rd_maj);
-			this.pnlCaregoria.Location = new System.Drawing.Point(345, 3);
+			this.pnlCaregoria.Location = new System.Drawing.Point(330, 3);
 			this.pnlCaregoria.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
 			this.pnlCaregoria.Name = "pnlCaregoria";
 			this.pnlCaregoria.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
@@ -670,8 +670,11 @@ namespace Conoce_tu_ukelele
 			this.Controls.Add(this.pnl_mastil);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+			this.MaximizeBox = false;
+			this.MaximumSize = new System.Drawing.Size(2227, 1115);
+			this.MinimumSize = new System.Drawing.Size(2227, 1115);
 			this.Name = "FormAcordes";
-			this.Text = "AcercaDe";
+			this.Text = "Acordes";
 			this.Load += new System.EventHandler(this.FormAcordes_Load);
 			this.pnlRaiz.ResumeLayout(false);
 			this.pnlRaiz.PerformLayout();

@@ -82,9 +82,9 @@ namespace Conoce_tu_ukelele.Forms
 			AbrirFormulario(MenuItemAcordes, new FormAcordes());
 		}
 
-		private void MenuItemEscalas_Click(object sender, EventArgs e)
+		private void MenuEscalas_Click(object sender, EventArgs e)
 		{
-			//AbrirFormulario(MenuItemEscalas, new frmProductos());
+			AbrirFormulario(MenuItemEscalas, new FormEscalas());
 
 		}
 

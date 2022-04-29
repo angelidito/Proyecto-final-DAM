@@ -5,6 +5,9 @@
     <Compile Update="Formbase.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormEscalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>

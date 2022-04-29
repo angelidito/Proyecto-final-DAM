@@ -44,7 +44,7 @@
 					nota = "G";
 					break;
 				case 8:
-					nota = sostenidos ? "B♯" : "A♭";
+					nota = sostenidos ? "G♯" : "A♭";
 					break;
 				case 9:
 					nota = "A";

@@ -35,7 +35,6 @@ namespace Conoce_tu_ukelele.Forms
 
 			btn_sostenidos.Text = "♯"; // ♭
 			sostenidos = true;
-
 			SetNotas();
 		}
 
@@ -48,7 +47,6 @@ namespace Conoce_tu_ukelele.Forms
 
 			btn_sostenidos.Text = "♯"; // ♭
 			sostenidos = true;
-
 			SetNotas();
 		}
 
@@ -60,10 +58,7 @@ namespace Conoce_tu_ukelele.Forms
 				for (int j = 0; j < 19; j++)
 				{
 					etiquetas[i, j].Text = NotaParser.GetNote(clave, ukelele.Mastil[i, j]);
-					//if (mostrarTodo)
-					//	etiquetas[i, j].Visible = true;
-					//else
-					//	etiquetas[i, j].Visible = false;
+
 				}
 		}
 
@@ -163,7 +158,7 @@ namespace Conoce_tu_ukelele.Forms
 
 		private void Mastil_Load(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		private void btn_sostenidos_Click(object sender, EventArgs e)
@@ -175,7 +170,10 @@ namespace Conoce_tu_ukelele.Forms
 
 		public void MostrarNotas(List<int> notas)
 		{
-
+			for (int i = 0; i < notas.Count; i++)
+			{
+				notas[i] %= 12;
+			}
 			for (int i = 0; i < 4; i++)
 				for (int j = 0; j < 19; j++)
 				{
@@ -187,6 +185,20 @@ namespace Conoce_tu_ukelele.Forms
 						etiquetas[i, j].Visible = false;
 				}
 		}
+		//public void MostrarNotas(int[] notas)
+		//{
+
+		//	for (int i = 0; i < 4; i++)
+		//		for (int j = 0; j < 19; j++)
+		//		{
+		//			if (mostrarTodo)
+		//				etiquetas[i, j].Visible = true;
+		//			else if (notas.Contains(ukelele.Mastil[i, j]))
+		//				etiquetas[i, j].Visible = true;
+		//			else
+		//				etiquetas[i, j].Visible = false;
+		//		}
+		//}
 
 	}
 }

@@ -8,8 +8,8 @@ namespace Conoce_tu_ukelele.Modelos
 {
 	public class Ukelele
 	{
-		private Afinacion afinacion = new Afinacion();
-		private int[,] mastil = new int[4, 19];
+		private static Afinacion afinacion = new Afinacion();
+		private static int[,] mastil = new int[4, 19];
 
 		public Ukelele()
 		{
@@ -29,7 +29,7 @@ namespace Conoce_tu_ukelele.Modelos
 
 		private void SetAfinacion(Afinacion afinacion)
 		{
-			this.afinacion = afinacion;
+			Ukelele.afinacion = afinacion;
 			SetMastil();
 		}
 

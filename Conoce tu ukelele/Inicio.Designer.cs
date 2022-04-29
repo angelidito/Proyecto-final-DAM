@@ -112,7 +112,7 @@ namespace Conoce_tu_ukelele.Forms
 			this.MenuItemEscalas.Size = new System.Drawing.Size(242, 86);
 			this.MenuItemEscalas.Text = "Escalas";
 			this.MenuItemEscalas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.MenuItemEscalas.Click += new System.EventHandler(this.MenuItemEscalas_Click);
+			this.MenuItemEscalas.Click += new System.EventHandler(this.MenuEscalas_Click);
 			// 
 			// MenuItemAfinacion
 			// 
@@ -158,6 +158,7 @@ namespace Conoce_tu_ukelele.Forms
 			// 
 			// contenedor
 			// 
+			this.contenedor.BackColor = System.Drawing.Color.White;
 			this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.contenedor.Location = new System.Drawing.Point(0, 204);
 			this.contenedor.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
