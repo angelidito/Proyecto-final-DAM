@@ -99,14 +99,14 @@ namespace Conoce_tu_ukelele
 			{
 				int[] escala = escalas[nombreEscala];
 
-				txtNotas.Text += " " + NotaParser.GetNote(raiz, notas[0]);
+				txtNotas.Text += " " + NotaParser.GetNota(raiz, notas[0]);
 
 				for (int i = 1; i < escala.Length; i++)
 				{
 					notas.Add((escala[i] + notas[0]) % 12);
-					txtNotas.Text += " " + NotaParser.GetNote(raiz, notas[i]);
+					txtNotas.Text += " " + NotaParser.GetNota(raiz, notas[i]);
 				}
-				txtNotas.Text += " " + NotaParser.GetNote(raiz, notas[0]);
+				txtNotas.Text += " " + NotaParser.GetNota(raiz, notas[0]);
 
 				if (String.Compare(nombreEscala, "Cromática") == 0)
 					txtNotas.Text = "Todas";

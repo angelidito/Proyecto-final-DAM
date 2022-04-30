@@ -34,6 +34,7 @@
 			this.txtNotas = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pnlEscala = new System.Windows.Forms.Panel();
+			this.radioButton14 = new System.Windows.Forms.RadioButton();
 			this.radioButton13 = new System.Windows.Forms.RadioButton();
 			this.radioButton12 = new System.Windows.Forms.RadioButton();
 			this.radioButton11 = new System.Windows.Forms.RadioButton();
@@ -66,7 +67,6 @@
 			this.rd_cs = new System.Windows.Forms.RadioButton();
 			this.rd_c = new System.Windows.Forms.RadioButton();
 			this.pnl_mastil = new System.Windows.Forms.Panel();
-			this.radioButton14 = new System.Windows.Forms.RadioButton();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.pnlEscala.SuspendLayout();
@@ -152,6 +152,18 @@
 			this.pnlEscala.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
 			this.pnlEscala.Size = new System.Drawing.Size(1012, 334);
 			this.pnlEscala.TabIndex = 10002;
+			// 
+			// radioButton14
+			// 
+			this.radioButton14.AutoSize = true;
+			this.radioButton14.Checked = true;
+			this.radioButton14.Location = new System.Drawing.Point(781, 211);
+			this.radioButton14.Name = "radioButton14";
+			this.radioButton14.Size = new System.Drawing.Size(152, 36);
+			this.radioButton14.TabIndex = 26;
+			this.radioButton14.TabStop = true;
+			this.radioButton14.Text = "Cromática";
+			this.radioButton14.UseVisualStyleBackColor = true;
 			// 
 			// radioButton13
 			// 
@@ -288,12 +300,10 @@
 			// radioButton1
 			// 
 			this.radioButton1.AutoSize = true;
-			this.radioButton1.Checked = true;
 			this.radioButton1.Location = new System.Drawing.Point(76, 65);
 			this.radioButton1.Name = "radioButton1";
 			this.radioButton1.Size = new System.Drawing.Size(113, 36);
 			this.radioButton1.TabIndex = 13;
-			this.radioButton1.TabStop = true;
 			this.radioButton1.Text = "Mayor";
 			this.radioButton1.UseVisualStyleBackColor = true;
 			this.radioButton1.CheckedChanged += new System.EventHandler(this.CheckedChanged);
@@ -527,16 +537,6 @@
 			this.pnl_mastil.Name = "pnl_mastil";
 			this.pnl_mastil.Size = new System.Drawing.Size(2000, 500);
 			this.pnl_mastil.TabIndex = 10002;
-			// 
-			// radioButton14
-			// 
-			this.radioButton14.AutoSize = true;
-			this.radioButton14.Location = new System.Drawing.Point(781, 211);
-			this.radioButton14.Name = "radioButton14";
-			this.radioButton14.Size = new System.Drawing.Size(152, 36);
-			this.radioButton14.TabIndex = 26;
-			this.radioButton14.Text = "Cromática";
-			this.radioButton14.UseVisualStyleBackColor = true;
 			// 
 			// FormEscalas
 			// 

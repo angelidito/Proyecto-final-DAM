@@ -90,7 +90,9 @@ namespace Conoce_tu_ukelele.Forms
 
 		private void MenuItemAfinacion_Click(object sender, EventArgs e)
 		{
-			//AbrirFormulario(MenuItemAfinacion, new frmProductos());
+
+			DialogAfinacion dialog = new();
+			dialog.ShowDialog();
 
 		}
 	}

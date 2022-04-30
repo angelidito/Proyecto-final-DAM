@@ -15,15 +15,16 @@ namespace Conoce_tu_ukelele.Forms
 	public partial class FormMastil : Form
 	{
 
-		private Label[,] etiquetas = new Label[4, 19];
-		private Ukelele ukelele = new Ukelele();
+		private readonly Label[,] etiquetas = new Label[4, 19];
+		private readonly Ukelele ukelele;
 		private bool sostenidos = true;
-		private bool mostrarTodo = false;
+		private readonly bool mostrarTodo = false;
+		private  List<int> notas = new();
 
-		public void CambiarAfinacion(Afinacion afinacion)
+		public void AfinacionCambiada()
 		{
-			ukelele.Afinacion = afinacion;
 			SetNotas();
+			MostrarNotas(notas);
 		}
 
 		public FormMastil()
@@ -31,20 +32,7 @@ namespace Conoce_tu_ukelele.Forms
 			InitializeComponent();
 			IncializarArrayEtiquetas();
 
-			ukelele = new Ukelele();
-
-			btn_sostenidos.Text = "♯"; // ♭
-			sostenidos = true;
-			SetNotas();
-		}
-
-		public FormMastil(Afinacion afinacion)
-		{
-			InitializeComponent();
-			IncializarArrayEtiquetas();
-
-			ukelele = new Ukelele(afinacion);
-
+			ukelele = new Ukelele(this);
 			btn_sostenidos.Text = "♯"; // ♭
 			sostenidos = true;
 			SetNotas();
@@ -57,7 +45,7 @@ namespace Conoce_tu_ukelele.Forms
 			for (int i = 0; i < 4; i++)
 				for (int j = 0; j < 19; j++)
 				{
-					etiquetas[i, j].Text = NotaParser.GetNote(clave, ukelele.Mastil[i, j]);
+					etiquetas[i, j].Text = NotaParser.GetNota(clave, Ukelele.Mastil[i, j]);
 
 				}
 		}
@@ -170,35 +158,21 @@ namespace Conoce_tu_ukelele.Forms
 
 		public void MostrarNotas(List<int> notas)
 		{
+			this.notas = notas;
 			for (int i = 0; i < notas.Count; i++)
-			{
 				notas[i] %= 12;
-			}
+
 			for (int i = 0; i < 4; i++)
 				for (int j = 0; j < 19; j++)
 				{
 					if (mostrarTodo)
 						etiquetas[i, j].Visible = true;
-					else if (notas.Contains(ukelele.Mastil[i, j]))
+					else if (notas.Contains(Ukelele.Mastil[i, j]))
 						etiquetas[i, j].Visible = true;
 					else
 						etiquetas[i, j].Visible = false;
 				}
 		}
-		//public void MostrarNotas(int[] notas)
-		//{
-
-		//	for (int i = 0; i < 4; i++)
-		//		for (int j = 0; j < 19; j++)
-		//		{
-		//			if (mostrarTodo)
-		//				etiquetas[i, j].Visible = true;
-		//			else if (notas.Contains(ukelele.Mastil[i, j]))
-		//				etiquetas[i, j].Visible = true;
-		//			else
-		//				etiquetas[i, j].Visible = false;
-		//		}
-		//}
-
+	
 	}
 }

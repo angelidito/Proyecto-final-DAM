@@ -22,3 +22,4 @@
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.Inicio.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.FormMastil.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.FormEscalas.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.DialogAfinacion.resources

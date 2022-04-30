@@ -319,12 +319,12 @@ namespace Conoce_tu_ukelele
 			txtNotas.Clear();
 			txtInfo.Clear();
 
-			txtNotas.Text += " " + NotaParser.GetNote(acorde, notas[0]);
+			txtNotas.Text += " " + NotaParser.GetNota(acorde, notas[0]);
 
 			for (int i = 1; i < notas.Count; i++)
 			{
 				notas[i] = (notas[i] + notas[0])% 12;
-				txtNotas.Text += " " + NotaParser.GetNote(acorde, notas[i]);
+				txtNotas.Text += " " + NotaParser.GetNota(acorde, notas[i]);
 			}
 
 			if (notas.Count > 4)

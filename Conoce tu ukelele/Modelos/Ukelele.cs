@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Conoce_tu_ukelele.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,12 @@ namespace Conoce_tu_ukelele.Modelos
 	{
 		private static Afinacion afinacion = new Afinacion();
 		private static int[,] mastil = new int[4, 19];
+		private static FormMastil? form = null;
 
-		public Ukelele()
+		public Ukelele(FormMastil form)
 		{
 			SetMastil();
+			Ukelele.form = form;
 		}
 
 		public Ukelele(Afinacion afinacion)
@@ -21,24 +24,25 @@ namespace Conoce_tu_ukelele.Modelos
 			SetAfinacion(afinacion);
 		}
 
-		public Afinacion Afinacion
+		public static Afinacion Afinacion
 		{
 			get { return afinacion; }
 			set { SetAfinacion(value); }
 		}
 
-		private void SetAfinacion(Afinacion afinacion)
+		private static void SetAfinacion(Afinacion afinacion)
 		{
 			Ukelele.afinacion = afinacion;
 			SetMastil();
+			form?.AfinacionCambiada();
 		}
 
-		public int[,] Mastil
+		public static int[,] Mastil
 		{
 			get { return mastil; }
 		}
 
-		private void SetMastil()
+		private static void SetMastil()
 		{
 			for (int i = 0; i < 4; i++)
 				for (int j = 0; j < 19; j++)

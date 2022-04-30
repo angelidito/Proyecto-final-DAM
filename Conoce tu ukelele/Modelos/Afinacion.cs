@@ -38,23 +38,41 @@ namespace Conoce_tu_ukelele.Modelos
 		}
 		public int GetCuerda(int cuerda)
 		{
-			int value = 0;
+			int valor = 0;
 			switch (cuerda)
 			{
 				case 0:
-					value = cuerda1;
+					valor = cuerda1;
 					break;
 				case 1:
-					value = cuerda2;
+					valor = cuerda2;
 					break;
 				case 2:
-					value = cuerda3;
+					valor = cuerda3;
 					break;
 				case 3:
-					value = cuerda4;
+					valor = cuerda4;
 					break;
 			}
-			return value;
+			return valor;
+		}
+		public void SetCuerda(int cuerda, int valor)
+		{
+			switch (cuerda)
+			{
+				case 0:
+					cuerda1 = valor;
+					break;
+				case 1:
+					cuerda2 = valor;
+					break;
+				case 2:
+					cuerda3 = valor;
+					break;
+				case 3:
+					cuerda4 = valor;
+					break;
+			}
 		}
 	}
 }
