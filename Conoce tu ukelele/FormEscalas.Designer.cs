@@ -549,6 +549,7 @@
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
 			this.Name = "FormEscalas";
 			this.Text = "Escalas";
+			this.Load += new System.EventHandler(this.FormEscalas_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();

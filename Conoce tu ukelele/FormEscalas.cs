@@ -14,6 +14,13 @@ namespace Conoce_tu_ukelele.Forms
 {
 	public partial class FormEscalas : Form
 	{
+
+		private List<RadioButton> escalasRadioButtons = new();
+		private readonly List<int> notas = new();
+		private readonly FormMastil mastil = new()
+		{
+			TopLevel = false
+		};
 		private static readonly int[] Mayor = { 0, 2, 4, 5, 7, 9, 11 };
 		private static readonly int[] Pentatonicamayor = { 0, 2, 4, 5, 9 };
 		private static readonly int[] MayordeBlues = { 0, 2, 3, 4, 7, 9 };
@@ -24,11 +31,10 @@ namespace Conoce_tu_ukelele.Forms
 		private static readonly int[] MenordeBlues = { 0, 3, 5, 6, 7, 10 };
 		private static readonly int[] Menorarmonica = { 0, 2, 3, 5, 7, 8, 11 };
 		private static readonly int[] MenordeJazz = { 0, 2, 3, 5, 7, 9, 11 };
-		private static readonly int[] Mixolidia = { 0, 2, 4, 5, 7, 9, 10 };
+		private static readonly int[] Mixolidia =   { 0, 2, 4, 5, 7, 9, 10 };
 		private static readonly int[] Klexmer = { 0, 1, 4, 5, 7, 8, 10 };
 		private static readonly int[] Japonesa = { 0, 1, 5, 7, 8 };
 		private static readonly int[] Cromatica = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
-
 		private static readonly Dictionary<string, int[]> escalas = new()
 		{
 			{ "Mayor", Mayor },
@@ -46,13 +52,21 @@ namespace Conoce_tu_ukelele.Forms
 			{ "Japonesa", Japonesa },
 			{ "Cromática", Cromatica }
 		};
-		private readonly FormMastil mastil = new()
+		private readonly List<string> colores = new()
 		{
-			TopLevel = false
+			"bb0000",
+			"bb6600",
+			"bbcc00",
+			"ccbb00",//ccdd
+			"00bb00",
+			"00bb99",
+			"00bbbb",//00dddd
+			"00aabb",
+			"0044bb",
+			"8800bb",
+			"ee00bb",//ee00
+			"bb00aa",
 		};
-
-		private List<RadioButton> escalasRadioButtons = new();
-		private readonly List<int> notas = new();
 
 		public FormEscalas()
 		{
@@ -78,7 +92,6 @@ namespace Conoce_tu_ukelele.Forms
 
 		private void FormEscalas_Load(object sender, EventArgs e)
 		{
-			CheckedChanged(null, null);
 
 			notas.Clear();
 
@@ -93,7 +106,7 @@ namespace Conoce_tu_ukelele.Forms
 			txtNotas.Clear();
 			txtInfo.Clear();
 
-			txtInfo.Text = raiz + " " + nombreEscala;
+			txtInfo.Text ="Mostrando la escala " + nombreEscala+" de "+ raiz + ".";
 			//escalas[escala];
 			try
 			{
@@ -116,20 +129,18 @@ namespace Conoce_tu_ukelele.Forms
 				else if (raiz.Contains('♭'))
 					mastil.Sostenido = false;
 
-				mastil.MostrarNotas(notas);
+				mastil.MostrarNotas(notas, colores);
 
 			}
 			catch (KeyNotFoundException)
 			{
-				txtInfo.Text = "Escala desconocida";
+				txtInfo.Text = "Escala desconocida: " + nombreEscala;
 			}
 			catch (Exception e)
 			{
 				txtInfo.Text = e.Message + " " + e.StackTrace;
 			}
 		}
-
-
 
 		private string GetRaiz()
 		{
@@ -246,6 +257,5 @@ namespace Conoce_tu_ukelele.Forms
 
 			MostrarDatos(raiz, escala);
 		}
-
 	}
 }
