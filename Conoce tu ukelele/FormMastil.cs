@@ -22,6 +22,7 @@ namespace Conoce_tu_ukelele.Forms
 		private readonly bool mostrarTodo = false;
 		private List<int> notas = new();
 		private List<int> cuerdasConFoco = new();
+		private List<string> colores;
 
 
 		public void AfinacionCambiada()
@@ -181,15 +182,37 @@ namespace Conoce_tu_ukelele.Forms
 						etiquetas[i, j].Visible = true;
 					else if (notas.Contains(Ukelele.Mastil[i, j]))
 					{
+						string hexColor = this.colores[notas.IndexOf(Ukelele.Mastil[i, j])];
 						etiquetas[i, j].Visible = true;
+						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#e6" + hexColor);
 					}
 					else
 						etiquetas[i, j].Visible = false;
 				}
 		}
+		//public void MostrarNotas(List<int> notas)
+		//{
+		//	this.notas = notas;
+		//	for (int i = 0; i < notas.Count; i++)
+		//		notas[i] %= 12;
+
+		//	for (int i = 0; i < 4; i++)
+		//		for (int j = 0; j < 19; j++)
+		//		{
+		//			if (mostrarTodo)
+		//				etiquetas[i, j].Visible = true;
+		//			else if (notas.Contains(Ukelele.Mastil[i, j]))
+		//			{
+		//				etiquetas[i, j].Visible = true;
+		//			}
+		//			else
+		//				etiquetas[i, j].Visible = false;
+		//		}
+		//}
 		public void MostrarNotas(List<int> notas, List<string> colores)
 		{
 			this.notas = notas;
+			this.colores = colores;
 			for (int i = 0; i < notas.Count; i++)
 				notas[i] %= 12;
 
@@ -200,7 +223,7 @@ namespace Conoce_tu_ukelele.Forms
 						etiquetas[i, j].Visible = true;
 					else if (notas.Contains(Ukelele.Mastil[i, j]))
 					{
-						string hexColor = colores[notas.IndexOf(Ukelele.Mastil[i, j])];
+						string hexColor = this.colores[notas.IndexOf(Ukelele.Mastil[i, j])];
 						etiquetas[i, j].Visible = true;
 						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#e6"+ hexColor);
 					}

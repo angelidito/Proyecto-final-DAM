@@ -7,13 +7,12 @@ namespace Conoce_tu_ukelele.Forms
 		private readonly List<int> notas = new();
 		private readonly List<string> colores = new()
 		{
-			"ff0000",
-			"ff9900",
-			"0000ff",
-			"ff00ff",
-			"00ff00",
+			"bb0000",//"ff0000",
+			"bb9900",//"ff9900",
+			"0000bb",//"0000ff",
+			"bb00bb",//"ff00ff",
+			"00bb00",//"00ff00",
 		};
-
 		private string acorde = "";
 		private FormMastil mastil = new()
 		{
@@ -319,7 +318,7 @@ namespace Conoce_tu_ukelele.Forms
 				mastil.Sostenido = false;
 
 			if (acorde.Contains('5'))
-				mastil.MostrarNotas(notas, new List<string> { "ff0000", "0000ff" });
+				mastil.MostrarNotas(notas, new List<string> { "bb0000", "0000bb" });
 			else
 				mastil.MostrarNotas(notas, colores);
 
