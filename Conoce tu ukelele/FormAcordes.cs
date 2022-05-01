@@ -1,14 +1,21 @@
-﻿using Conoce_tu_ukelele.Forms;
-using Conoce_tu_ukelele.Modelos;
-using System.Collections;
+﻿using Conoce_tu_ukelele.Modelos;
 
-namespace Conoce_tu_ukelele
+namespace Conoce_tu_ukelele.Forms
 {
 	public partial class FormAcordes : Form
 	{
 		private readonly List<int> notas = new();
+		private readonly List<string> colores = new()
+		{
+			"ff0000",
+			"ff9900",
+			"0000ff",
+			"ff00ff",
+			"00ff00",
+		};
+
 		private string acorde = "";
-		private FormMastil mastil= new()
+		private FormMastil mastil = new()
 		{
 			TopLevel = false
 		};
@@ -17,13 +24,15 @@ namespace Conoce_tu_ukelele
 		{
 			InitializeComponent();
 
+
 			pnl_mastil.Controls.Add(mastil);
 			mastil.Show();
+			mastil.MostrandoAcordes();
 		}
 
 		private void FormAcordes_Load(object sender, EventArgs e)
 		{
-			CheckedChanged(null,null);
+			CheckedChanged(null, null);
 		}
 
 
@@ -309,10 +318,12 @@ namespace Conoce_tu_ukelele
 			else if (acorde.Contains('♭'))
 				mastil.Sostenido = false;
 
-			mastil.MostrarNotas(notas);
+			if (acorde.Contains('5'))
+				mastil.MostrarNotas(notas, new List<string> { "ff0000", "0000ff" });
+			else
+				mastil.MostrarNotas(notas, colores);
 
 		}
-
 
 		private void MostrarDatos()
 		{
@@ -323,7 +334,7 @@ namespace Conoce_tu_ukelele
 
 			for (int i = 1; i < notas.Count; i++)
 			{
-				notas[i] = (notas[i] + notas[0])% 12;
+				notas[i] = (notas[i] + notas[0]) % 12;
 				txtNotas.Text += " " + NotaParser.GetNota(acorde, notas[i]);
 			}
 
@@ -340,8 +351,8 @@ namespace Conoce_tu_ukelele
 					notas[2]
 					);
 			}
-			
-				
+
+
 
 		}
 	}

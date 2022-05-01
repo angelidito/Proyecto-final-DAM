@@ -1,5 +1,5 @@
 ﻿
-namespace Conoce_tu_ukelele
+namespace Conoce_tu_ukelele.Forms
 {
 	partial class FormAcordes
 	{

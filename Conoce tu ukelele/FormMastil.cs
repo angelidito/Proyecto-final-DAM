@@ -18,8 +18,11 @@ namespace Conoce_tu_ukelele.Forms
 		private readonly Label[,] etiquetas = new Label[4, 19];
 		private readonly Ukelele ukelele;
 		private bool sostenidos = true;
+		private bool focoOnClick = false;
 		private readonly bool mostrarTodo = false;
-		private  List<int> notas = new();
+		private List<int> notas = new();
+		private List<int> cuerdasConFoco = new();
+
 
 		public void AfinacionCambiada()
 		{
@@ -32,10 +35,19 @@ namespace Conoce_tu_ukelele.Forms
 			InitializeComponent();
 			IncializarArrayEtiquetas();
 
+			BtnFocoOnClick.Visible = false;
+			BtnFocoOnClick.Enabled = false;
 			ukelele = new Ukelele(this);
 			btn_sostenidos.Text = "♯"; // ♭
 			sostenidos = true;
 			SetNotas();
+		}
+
+		public void MostrandoAcordes()
+		{
+			BtnFocoOnClick.Visible = true;
+			BtnFocoOnClick.Enabled = true;
+			BtnFocoOnClick_Click(null, null);
 		}
 
 		private void SetNotas()
@@ -146,7 +158,7 @@ namespace Conoce_tu_ukelele.Forms
 
 		private void Mastil_Load(object sender, EventArgs e)
 		{
-			
+
 		}
 
 		private void btn_sostenidos_Click(object sender, EventArgs e)
@@ -168,11 +180,108 @@ namespace Conoce_tu_ukelele.Forms
 					if (mostrarTodo)
 						etiquetas[i, j].Visible = true;
 					else if (notas.Contains(Ukelele.Mastil[i, j]))
+					{
 						etiquetas[i, j].Visible = true;
+					}
 					else
 						etiquetas[i, j].Visible = false;
 				}
 		}
-	
+		public void MostrarNotas(List<int> notas, List<string> colores)
+		{
+			this.notas = notas;
+			for (int i = 0; i < notas.Count; i++)
+				notas[i] %= 12;
+
+			for (int i = 0; i < 4; i++)
+				for (int j = 0; j < 19; j++)
+				{
+					if (mostrarTodo)
+						etiquetas[i, j].Visible = true;
+					else if (notas.Contains(Ukelele.Mastil[i, j]))
+					{
+						string hexColor = colores[notas.IndexOf(Ukelele.Mastil[i, j])];
+						etiquetas[i, j].Visible = true;
+						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#e6"+ hexColor);
+					}
+					else
+						etiquetas[i, j].Visible = false;
+				}
+		}
+		public void MostrarNotasCuerda(List<int> notas, int cuerda)
+		{
+			this.notas = notas;
+			for (int i = 0; i < notas.Count; i++)
+				notas[i] %= 12;
+
+			for (int j = 0; j < 19; j++)
+			{
+				if (mostrarTodo)
+					etiquetas[cuerda, j].Visible = true;
+				else if (notas.Contains(Ukelele.Mastil[cuerda, j]))
+					etiquetas[cuerda, j].Visible = true;
+				else
+					etiquetas[cuerda, j].Visible = false;
+			}
+		}
+
+		private void BtnFocoOnClick_Click(object sender, EventArgs e)
+		{
+			if (String.Compare(BtnFocoOnClick.Text, "No ocultar al tocar") == 0)
+			{
+				BtnFocoOnClick.Text = "Ocultar al tocar";
+				focoOnClick = true;
+			}
+			else
+			{
+				BtnFocoOnClick.Text = "No ocultar al tocar";
+				focoOnClick = false;
+				if (cuerdasConFoco.Count > 0)
+				{
+					cuerdasConFoco.Clear();
+					MostrarNotas(notas);
+				}
+			}
+		}
+
+		private void NotaMastil_OnClick(object sender, EventArgs e)
+		{
+			if (!focoOnClick)
+				return;
+
+			Label textBox = (Label)sender;
+			int cuerda = -1;
+			int traste = -1;
+
+			// Buscamos la etiqueta en la que se ha hecho click
+			for (int i = 0; i < 4 && cuerda == -1; i++)
+				for (int j = 0; j < 19 && cuerda == -1; j++)
+				{
+					if (textBox.Equals(etiquetas[i, j]))
+					{
+						cuerda = i;
+						traste = j;
+					}
+				}
+
+			//Si ya se había pulsado, quitamos el foco y mostramos las notas en esa cuerda
+			if (cuerdasConFoco.Contains(cuerda))
+			{
+				MostrarNotasCuerda(notas, cuerda);
+				cuerdasConFoco.RemoveAt(cuerdasConFoco.IndexOf(cuerda));
+				return;
+			}
+
+			// Si no, ocultamos todas las etiquetas de esa fila menos en la que se ha hecho clik
+			for (int j = 0; j < traste; j++)
+				etiquetas[cuerda, j].Visible = false;
+			for (int j = traste + 1; j < 19; j++)
+				etiquetas[cuerda, j].Visible = false;
+
+			//
+			cuerdasConFoco.Add(cuerda);
+		}
+
+		
 	}
 }

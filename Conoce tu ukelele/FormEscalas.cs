@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Conoce_tu_ukelele
+namespace Conoce_tu_ukelele.Forms
 {
 	public partial class FormEscalas : Form
 	{
