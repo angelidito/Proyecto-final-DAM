@@ -31,13 +31,13 @@ namespace Conoce_tu_ukelele.Forms
 			MostrarNotas(notas);
 		}
 
-		public FormMastil()
+		public FormMastil(List<string> colores)
 		{
 			InitializeComponent();
 			IncializarArrayEtiquetas();
-
-			BtnFocoOnClick.Visible = false;
-			BtnFocoOnClick.Enabled = false;
+			this.colores = colores;
+			//BtnFocoOnClick.Visible = false;
+			//BtnFocoOnClick.Enabled = false;
 			ukelele = new Ukelele(this);
 			btn_sostenidos.Text = "♯"; // ♭
 			sostenidos = true;
@@ -184,7 +184,7 @@ namespace Conoce_tu_ukelele.Forms
 					{
 						string hexColor = this.colores[notas.IndexOf(Ukelele.Mastil[i, j])];
 						etiquetas[i, j].Visible = true;
-						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#e6" + hexColor);
+						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#" + hexColor);
 					}
 					else
 						etiquetas[i, j].Visible = false;
@@ -225,7 +225,7 @@ namespace Conoce_tu_ukelele.Forms
 					{
 						string hexColor = this.colores[notas.IndexOf(Ukelele.Mastil[i, j])];
 						etiquetas[i, j].Visible = true;
-						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#e6"+ hexColor);
+						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#" + hexColor);
 					}
 					else
 						etiquetas[i, j].Visible = false;
@@ -305,6 +305,6 @@ namespace Conoce_tu_ukelele.Forms
 			cuerdasConFoco.Add(cuerda);
 		}
 
-		
+
 	}
 }

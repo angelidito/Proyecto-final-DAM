@@ -14,15 +14,15 @@ namespace Conoce_tu_ukelele.Forms
 			"00bb00",//"00ff00",
 		};
 		private string acorde = "";
-		private FormMastil mastil = new()
-		{
-			TopLevel = false
-		};
+		private FormMastil mastil;
 
 		public FormAcordes()
 		{
 			InitializeComponent();
-
+			mastil = new(colores)
+			{
+				TopLevel = false
+			};
 
 			pnl_mastil.Controls.Add(mastil);
 			mastil.Show();
@@ -177,6 +177,7 @@ namespace Conoce_tu_ukelele.Forms
 				{
 					pnlColor.Enabled = false;
 					pnlAdd.Enabled = false;
+
 					categoria = "5";
 					rd_naColor.Checked = true;
 					rd_naAdd.Checked = true;

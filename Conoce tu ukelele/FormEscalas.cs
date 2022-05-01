@@ -17,10 +17,6 @@ namespace Conoce_tu_ukelele.Forms
 
 		private List<RadioButton> escalasRadioButtons = new();
 		private readonly List<int> notas = new();
-		private readonly FormMastil mastil = new()
-		{
-			TopLevel = false
-		};
 		private static readonly int[] Mayor = { 0, 2, 4, 5, 7, 9, 11 };
 		private static readonly int[] Pentatonicamayor = { 0, 2, 4, 5, 9 };
 		private static readonly int[] MayordeBlues = { 0, 2, 3, 4, 7, 9 };
@@ -58,16 +54,17 @@ namespace Conoce_tu_ukelele.Forms
 			"bb6600",
 			"bbcc00",
 			"ccbb00",//ccdd
-			"00bb00",
+			"00bf00",
 			"00bb99",
-			"00bbbb",//00dddd
-			"00aabb",
-			"0044bb",
+			//"00bbbb",//00dddd
+			"0080cc",
+			"0033bb",
 			"8800bb",
-			"ee00bb",//ee00
-			"bb00aa",
+			"ee00cc",//ee00
+			"bb0099",
+			"bb0055",
 		};
-
+		private readonly FormMastil mastil;
 		public FormEscalas()
 		{
 			InitializeComponent();
@@ -85,6 +82,11 @@ namespace Conoce_tu_ukelele.Forms
 			escalasRadioButtons.Add(radioButton12);
 			escalasRadioButtons.Add(radioButton13);
 			escalasRadioButtons.Add(radioButton14);
+
+			mastil = new(colores)
+			{
+				TopLevel = false
+			};
 
 			pnl_mastil.Controls.Add(mastil);
 			mastil.Show();
