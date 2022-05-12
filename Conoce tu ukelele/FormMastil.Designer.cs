@@ -112,6 +112,7 @@
 			this.label79 = new System.Windows.Forms.Label();
 			this.label80 = new System.Windows.Forms.Label();
 			this.label81 = new System.Windows.Forms.Label();
+			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -1664,7 +1665,7 @@
 			this.btn_sostenidos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
 			this.btn_sostenidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btn_sostenidos.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.btn_sostenidos.Location = new System.Drawing.Point(1935, 12);
+			this.btn_sostenidos.Location = new System.Drawing.Point(336, 14);
 			this.btn_sostenidos.Name = "btn_sostenidos";
 			this.btn_sostenidos.Size = new System.Drawing.Size(53, 53);
 			this.btn_sostenidos.TabIndex = 0;
@@ -1679,7 +1680,7 @@
 			this.BtnFocoOnClick.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
 			this.BtnFocoOnClick.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
 			this.BtnFocoOnClick.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.BtnFocoOnClick.Location = new System.Drawing.Point(1686, 12);
+			this.BtnFocoOnClick.Location = new System.Drawing.Point(1684, 14);
 			this.BtnFocoOnClick.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
 			this.BtnFocoOnClick.Name = "BtnFocoOnClick";
 			this.BtnFocoOnClick.Size = new System.Drawing.Size(226, 53);
@@ -1783,6 +1784,21 @@
 			this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.label81.UseMnemonic = false;
 			// 
+			// button2
+			// 
+			this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
+			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.button2.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.button2.Location = new System.Drawing.Point(1933, 14);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(53, 53);
+			this.button2.TabIndex = 82;
+			this.button2.Text = "♯";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// FormMastil
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -1792,6 +1808,7 @@
 			this.BackgroundImage = global::Conoce_tu_ukelele.Properties.Resources.marstil_ukelele;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(2000, 500);
+			this.Controls.Add(this.button2);
 			this.Controls.Add(this.label81);
 			this.Controls.Add(this.label80);
 			this.Controls.Add(this.label79);
@@ -1972,5 +1989,6 @@
 		private Label label80;
 		private Label label81;
 		private Label text;
+		private Button button2;
 	}
 }

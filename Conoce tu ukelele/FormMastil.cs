@@ -15,53 +15,30 @@ namespace Conoce_tu_ukelele.Forms
 	public partial class FormMastil : Form
 	{
 
+		private string nombre = "";
 		private readonly Label[,] etiquetas = new Label[4, 19];
-		private readonly Ukelele ukelele;
 		private bool sostenidos = true;
 		private bool focoOnClick = false;
 		private readonly bool mostrarTodo = false;
 		private List<int> notas = new();
 		private List<int> cuerdasConFoco = new();
-		private List<string> colores;
-
-
-		public void AfinacionCambiada()
+		private List<string> colores = new()
 		{
-			SetNotas();
-			MostrarNotas(notas);
-		}
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+			"000000",
+		};
 
-		public FormMastil(List<string> colores)
-		{
-			InitializeComponent();
-			IncializarArrayEtiquetas();
-			this.colores = colores;
-			//BtnFocoOnClick.Visible = false;
-			//BtnFocoOnClick.Enabled = false;
-			ukelele = new Ukelele(this);
-			btn_sostenidos.Text = "♯"; // ♭
-			sostenidos = true;
-			SetNotas();
-		}
 
-		public void MostrandoAcordes()
-		{
-			BtnFocoOnClick.Visible = true;
-			BtnFocoOnClick.Enabled = true;
-			BtnFocoOnClick_Click(null, null);
-		}
-
-		private void SetNotas()
-		{
-			string clave = sostenidos ? "♯" : "♭";
-
-			for (int i = 0; i < 4; i++)
-				for (int j = 0; j < 19; j++)
-				{
-					etiquetas[i, j].Text = NotaParser.GetNota(clave, Ukelele.Mastil[i, j]);
-
-				}
-		}
 
 		public bool Sostenido
 		{
@@ -75,6 +52,40 @@ namespace Conoce_tu_ukelele.Forms
 					SetNotas();
 				}
 			}
+		}
+
+		public FormMastil()
+		{
+			InitializeComponent();
+			IncializarArrayEtiquetas();
+
+			btn_sostenidos.Text = "♯"; // ♭
+			sostenidos = true;
+			SetNotas();
+		}
+		public void AfinacionCambiada()
+		{
+			SetNotas();
+			MostrarNotas(notas);
+		}
+
+		public void MostrandoAcordes()
+		{
+			BtnFocoOnClick.Visible = true;
+			BtnFocoOnClick.Enabled = true;
+			BtnFocoOnClick_Click(new Object(), new EventArgs());
+		}
+
+		private void SetNotas()
+		{
+			string clave = sostenidos ? "♯" : "♭";
+
+			for (int i = 0; i < 4; i++)
+				for (int j = 0; j < 19; j++)
+				{
+					etiquetas[i, j].Text = NotaParser.GetNota(clave, Ukelele.Mastil[i, j]);
+
+				}
 		}
 
 		private void IncializarArrayEtiquetas()
@@ -169,7 +180,8 @@ namespace Conoce_tu_ukelele.Forms
 			SetNotas();
 		}
 
-		public void MostrarNotas(List<int> notas)
+		// MostrarNotas
+		private void MostrarNotas(List<int> notas)
 		{
 			this.notas = notas;
 			for (int i = 0; i < notas.Count; i++)
@@ -190,47 +202,19 @@ namespace Conoce_tu_ukelele.Forms
 						etiquetas[i, j].Visible = false;
 				}
 		}
-		//public void MostrarNotas(List<int> notas)
-		//{
-		//	this.notas = notas;
-		//	for (int i = 0; i < notas.Count; i++)
-		//		notas[i] %= 12;
 
-		//	for (int i = 0; i < 4; i++)
-		//		for (int j = 0; j < 19; j++)
-		//		{
-		//			if (mostrarTodo)
-		//				etiquetas[i, j].Visible = true;
-		//			else if (notas.Contains(Ukelele.Mastil[i, j]))
-		//			{
-		//				etiquetas[i, j].Visible = true;
-		//			}
-		//			else
-		//				etiquetas[i, j].Visible = false;
-		//		}
-		//}
-		public void MostrarNotas(List<int> notas, List<string> colores)
+		private void MostrarNotas(List<int> notas, List<string> colores)
 		{
-			this.notas = notas;
 			this.colores = colores;
-			for (int i = 0; i < notas.Count; i++)
-				notas[i] %= 12;
-
-			for (int i = 0; i < 4; i++)
-				for (int j = 0; j < 19; j++)
-				{
-					if (mostrarTodo)
-						etiquetas[i, j].Visible = true;
-					else if (notas.Contains(Ukelele.Mastil[i, j]))
-					{
-						string hexColor = this.colores[notas.IndexOf(Ukelele.Mastil[i, j])];
-						etiquetas[i, j].Visible = true;
-						etiquetas[i, j].BackColor = ColorTranslator.FromHtml("#" + hexColor);
-					}
-					else
-						etiquetas[i, j].Visible = false;
-				}
+			MostrarNotas(notas);
 		}
+
+		public void MostrarNotas(List<int> notas, List<string> colores, string nombre)
+		{
+			this.nombre = nombre;
+			MostrarNotas(notas, colores);
+		}
+
 		public void MostrarNotasCuerda(List<int> notas, int cuerda)
 		{
 			this.notas = notas;
@@ -272,7 +256,7 @@ namespace Conoce_tu_ukelele.Forms
 			if (!focoOnClick)
 				return;
 
-			Label textBox = (Label)sender;
+			Label textBoxSender = (Label)sender;
 			int cuerda = -1;
 			int traste = -1;
 
@@ -280,7 +264,7 @@ namespace Conoce_tu_ukelele.Forms
 			for (int i = 0; i < 4 && cuerda == -1; i++)
 				for (int j = 0; j < 19 && cuerda == -1; j++)
 				{
-					if (textBox.Equals(etiquetas[i, j]))
+					if (textBoxSender.Equals(etiquetas[i, j]))
 					{
 						cuerda = i;
 						traste = j;

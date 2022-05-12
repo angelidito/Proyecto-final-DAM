@@ -711,7 +711,6 @@ namespace Conoce_tu_ukelele.Forms
 		private RadioButton rd_cs;
 		private RadioButton rd_c;
 		private Panel panel1;
-		private RadioButton rd_;
 		private RadioButton rd_ab;
 		private RadioButton rd_gb;
 		private RadioButton rd_eb;

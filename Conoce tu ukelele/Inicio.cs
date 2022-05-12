@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Conoce_tu_ukelele.Modelos;
-using FontAwesome.Sharp;
+﻿using FontAwesome.Sharp;
+using System.Text.Json;
+
 
 namespace Conoce_tu_ukelele.Forms
 {
 	public partial class Inicio : Form
 	{
-		private static IconMenuItem MenuActivo = null;
-		private static Form FormularioActivo = null;
-
+		private static IconMenuItem? MenuActivo = null;
+		private static Form? FormularioActivo = null;
+		private static FormMastil formMastil = new ();
+		private FormEscalas formEscalas = new ();
+		private FormAcordes formAcordes = new ();
 		public Inicio()
 		{
 			InitializeComponent();
@@ -31,10 +25,7 @@ namespace Conoce_tu_ukelele.Forms
 			//}
 		}
 
-		//public static int[,] GetThisMastil()
-		//{
 
-		//}
 
 
 		private void Inicio_Load(object sender, EventArgs e)
@@ -79,12 +70,11 @@ namespace Conoce_tu_ukelele.Forms
 
 		private void MenuAcordes_Click(object sender, EventArgs e)
 		{
-			AbrirFormulario(MenuItemAcordes, new FormAcordes());
+			AbrirFormulario(MenuItemAcordes, formAcordes);
 		}
-
 		private void MenuEscalas_Click(object sender, EventArgs e)
 		{
-			AbrirFormulario(MenuItemEscalas, new FormEscalas());
+			AbrirFormulario(MenuItemEscalas, formEscalas);
 
 		}
 
@@ -95,5 +85,7 @@ namespace Conoce_tu_ukelele.Forms
 			dialog.ShowDialog();
 
 		}
+
+		
 	}
 }

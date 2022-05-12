@@ -568,13 +568,6 @@
 		private RichTextBox txtInfo;
 		private TextBox txtNotas;
 		private Label label1;
-		private Panel pnlAdd;
-		private RadioButton rd_naAdd;
-		private RadioButton rd_add9;
-		private Panel pnlSus;
-		private RadioButton rd_nasus;
-		private RadioButton rd_sus4;
-		private RadioButton rd_sus2;
 		private Panel pnlEscala;
 		private Panel pnlRaiz;
 		private RadioButton rd_c;

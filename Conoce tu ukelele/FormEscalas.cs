@@ -27,7 +27,7 @@ namespace Conoce_tu_ukelele.Forms
 		private static readonly int[] MenordeBlues = { 0, 3, 5, 6, 7, 10 };
 		private static readonly int[] Menorarmonica = { 0, 2, 3, 5, 7, 8, 11 };
 		private static readonly int[] MenordeJazz = { 0, 2, 3, 5, 7, 9, 11 };
-		private static readonly int[] Mixolidia =   { 0, 2, 4, 5, 7, 9, 10 };
+		private static readonly int[] Mixolidia = { 0, 2, 4, 5, 7, 9, 10 };
 		private static readonly int[] Klexmer = { 0, 1, 4, 5, 7, 8, 10 };
 		private static readonly int[] Japonesa = { 0, 1, 5, 7, 8 };
 		private static readonly int[] Cromatica = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
@@ -83,7 +83,7 @@ namespace Conoce_tu_ukelele.Forms
 			escalasRadioButtons.Add(radioButton13);
 			escalasRadioButtons.Add(radioButton14);
 
-			mastil = new(colores)
+			mastil = new()
 			{
 				TopLevel = false
 			};
@@ -108,13 +108,14 @@ namespace Conoce_tu_ukelele.Forms
 			txtNotas.Clear();
 			txtInfo.Clear();
 
-			txtInfo.Text ="Mostrando la escala " + nombreEscala+" de "+ raiz + ".";
+			txtInfo.Text = "Mostrando la escala " + nombreEscala + " de " + raiz + ".";
 			//escalas[escala];
 			try
 			{
 				int[] escala = escalas[nombreEscala];
 
 				txtNotas.Text += " " + NotaParser.GetNota(raiz, notas[0]);
+				string nombre = "Escala " + NotaParser.GetNota(raiz, notas[0]);
 
 				for (int i = 1; i < escala.Length; i++)
 				{
@@ -122,6 +123,7 @@ namespace Conoce_tu_ukelele.Forms
 					txtNotas.Text += " " + NotaParser.GetNota(raiz, notas[i]);
 				}
 				txtNotas.Text += " " + NotaParser.GetNota(raiz, notas[0]);
+				nombre += " " + NotaParser.GetNota(raiz, notas[0]);
 
 				if (String.Compare(nombreEscala, "Cromática") == 0)
 					txtNotas.Text = "Todas";
@@ -131,7 +133,7 @@ namespace Conoce_tu_ukelele.Forms
 				else if (raiz.Contains('♭'))
 					mastil.Sostenido = false;
 
-				mastil.MostrarNotas(notas, colores);
+				mastil.MostrarNotas(notas, colores, nombre);
 
 			}
 			catch (KeyNotFoundException)

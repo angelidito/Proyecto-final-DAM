@@ -36,6 +36,7 @@ namespace Conoce_tu_ukelele.Forms
 			this.MenuItemAcordes = new FontAwesome.Sharp.IconMenuItem();
 			this.MenuItemEscalas = new FontAwesome.Sharp.IconMenuItem();
 			this.MenuItemAfinacion = new FontAwesome.Sharp.IconMenuItem();
+			this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
 			this.salirbtn = new FontAwesome.Sharp.IconMenuItem();
 			this.lblUsuario = new System.Windows.Forms.Label();
 			this.contenedor = new System.Windows.Forms.Panel();
@@ -75,6 +76,7 @@ namespace Conoce_tu_ukelele.Forms
             this.MenuItemAcordes,
             this.MenuItemEscalas,
             this.MenuItemAfinacion,
+            this.iconMenuItem1,
             this.salirbtn});
 			this.Menu.Location = new System.Drawing.Point(0, 108);
 			this.Menu.Name = "Menu";
@@ -94,7 +96,7 @@ namespace Conoce_tu_ukelele.Forms
 			this.MenuItemAcordes.IconSize = 50;
 			this.MenuItemAcordes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.MenuItemAcordes.Name = "MenuItemAcordes";
-			this.MenuItemAcordes.Size = new System.Drawing.Size(242, 80);
+			this.MenuItemAcordes.Size = new System.Drawing.Size(260, 80);
 			this.MenuItemAcordes.Text = "Generador de acordes";
 			this.MenuItemAcordes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.MenuItemAcordes.Click += new System.EventHandler(this.MenuAcordes_Click);
@@ -109,7 +111,7 @@ namespace Conoce_tu_ukelele.Forms
 			this.MenuItemEscalas.IconSize = 50;
 			this.MenuItemEscalas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.MenuItemEscalas.Name = "MenuItemEscalas";
-			this.MenuItemEscalas.Size = new System.Drawing.Size(242, 86);
+			this.MenuItemEscalas.Size = new System.Drawing.Size(140, 86);
 			this.MenuItemEscalas.Text = "Escalas";
 			this.MenuItemEscalas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.MenuItemEscalas.Click += new System.EventHandler(this.MenuEscalas_Click);
@@ -124,10 +126,24 @@ namespace Conoce_tu_ukelele.Forms
 			this.MenuItemAfinacion.IconSize = 50;
 			this.MenuItemAfinacion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.MenuItemAfinacion.Name = "MenuItemAfinacion";
-			this.MenuItemAfinacion.Size = new System.Drawing.Size(242, 86);
+			this.MenuItemAfinacion.Size = new System.Drawing.Size(180, 86);
 			this.MenuItemAfinacion.Text = "Mi afinacion";
 			this.MenuItemAfinacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.MenuItemAfinacion.Click += new System.EventHandler(this.MenuItemAfinacion_Click);
+			// 
+			// iconMenuItem1
+			// 
+			this.iconMenuItem1.AutoSize = false;
+			this.iconMenuItem1.BackColor = System.Drawing.Color.White;
+			this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+			this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
+			this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.iconMenuItem1.IconSize = 50;
+			this.iconMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			this.iconMenuItem1.Name = "iconMenuItem1";
+			this.iconMenuItem1.Size = new System.Drawing.Size(242, 86);
+			this.iconMenuItem1.Text = "Salir";
+			this.iconMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
 			// salirbtn
 			// 
@@ -139,7 +155,7 @@ namespace Conoce_tu_ukelele.Forms
 			this.salirbtn.IconSize = 50;
 			this.salirbtn.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.salirbtn.Name = "salirbtn";
-			this.salirbtn.Size = new System.Drawing.Size(90, 80);
+			this.salirbtn.Size = new System.Drawing.Size(150, 86);
 			this.salirbtn.Text = "Salir";
 			this.salirbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
@@ -202,6 +218,7 @@ namespace Conoce_tu_ukelele.Forms
 		private FontAwesome.Sharp.IconMenuItem MenuItemEscalas;
 		private FontAwesome.Sharp.IconMenuItem salirbtn;
 		private FontAwesome.Sharp.IconMenuItem MenuItemAfinacion;
+		private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
 	}
 }
 

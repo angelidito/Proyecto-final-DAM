@@ -19,7 +19,7 @@ namespace Conoce_tu_ukelele.Forms
 		public FormAcordes()
 		{
 			InitializeComponent();
-			mastil = new(colores)
+			mastil = new()
 			{
 				TopLevel = false
 			};
@@ -31,7 +31,7 @@ namespace Conoce_tu_ukelele.Forms
 
 		private void FormAcordes_Load(object sender, EventArgs e)
 		{
-			CheckedChanged(null, null);
+			CheckedChanged(new Object(), new EventArgs());
 		}
 
 
@@ -319,9 +319,9 @@ namespace Conoce_tu_ukelele.Forms
 				mastil.Sostenido = false;
 
 			if (acorde.Contains('5'))
-				mastil.MostrarNotas(notas, new List<string> { "bb0000", "0000bb" });
+				mastil.MostrarNotas(notas, new List<string> { "bb0000", "0000bb" }, acorde);
 			else
-				mastil.MostrarNotas(notas, colores);
+				mastil.MostrarNotas(notas, colores, acorde);
 
 		}
 
