@@ -23,3 +23,8 @@
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.DialogAfinacion.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.FormAcordes.resources
 \\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\obj\Debug\net6.0-windows\Conoce_tu_ukelele.Forms.FormEscalas.resources
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Microsoft.DotNet.PlatformAbstractions.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Microsoft.Extensions.PlatformAbstractions.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Nancy.dll
+\\Mac\Home\Documents\GitHub\Proyecto-final-DAM\Conoce tu ukelele\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
