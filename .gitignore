@@ -23,3 +23,8 @@ Conoce tu ukelele/obj/Debug/net6.0-windows/ref/Conoce tu ukelele.dll
 Conoce tu ukelele/obj/Debug/net6.0-windows/refint/Conoce tu ukelele.dll
 Conoce tu ukelele/obj/project.assets.json
 Conoce tu ukelele/obj/project.nuget.cache
+*.pdb
+*.dll
+*.cache
+*.dll
+*.pdb
