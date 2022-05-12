@@ -77,10 +77,6 @@ namespace Conoce_tu_ukelele.Forms
 			Close();
 		}
 
-		private void DialogAfinacion_Load(object sender, EventArgs e)
-		{
-		}
-
 		private void Txt_TextChanged(object sender, MouseEventArgs e)
 		{
 			TextBox t = (TextBox)sender;

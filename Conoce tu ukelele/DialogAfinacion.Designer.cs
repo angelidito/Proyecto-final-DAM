@@ -40,13 +40,15 @@
 			this.btnAceptar = new System.Windows.Forms.Button();
 			this.test = new System.Windows.Forms.Label();
 			this.btnCancelar = new System.Windows.Forms.Button();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label1.Location = new System.Drawing.Point(68, 185);
+			this.label1.Location = new System.Drawing.Point(62, 185);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(137, 41);
 			this.label1.TabIndex = 0;
@@ -56,7 +58,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label2.Location = new System.Drawing.Point(254, 185);
+			this.label2.Location = new System.Drawing.Point(248, 185);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(137, 41);
 			this.label2.TabIndex = 1;
@@ -66,7 +68,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label3.Location = new System.Drawing.Point(440, 185);
+			this.label3.Location = new System.Drawing.Point(434, 185);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(137, 41);
 			this.label3.TabIndex = 2;
@@ -76,7 +78,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label4.Location = new System.Drawing.Point(626, 185);
+			this.label4.Location = new System.Drawing.Point(620, 185);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(137, 41);
 			this.label4.TabIndex = 3;
@@ -85,7 +87,7 @@
 			// txt1
 			// 
 			this.txt1.Font = new System.Drawing.Font("Cascadia Mono", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.txt1.Location = new System.Drawing.Point(88, 252);
+			this.txt1.Location = new System.Drawing.Point(82, 252);
 			this.txt1.Name = "txt1";
 			this.txt1.Size = new System.Drawing.Size(97, 51);
 			this.txt1.TabIndex = 4;
@@ -97,7 +99,7 @@
 			// txt2
 			// 
 			this.txt2.Font = new System.Drawing.Font("Cascadia Mono", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.txt2.Location = new System.Drawing.Point(274, 252);
+			this.txt2.Location = new System.Drawing.Point(268, 252);
 			this.txt2.Name = "txt2";
 			this.txt2.Size = new System.Drawing.Size(97, 51);
 			this.txt2.TabIndex = 5;
@@ -109,7 +111,7 @@
 			// txt3
 			// 
 			this.txt3.Font = new System.Drawing.Font("Cascadia Mono", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.txt3.Location = new System.Drawing.Point(460, 252);
+			this.txt3.Location = new System.Drawing.Point(454, 252);
 			this.txt3.Name = "txt3";
 			this.txt3.Size = new System.Drawing.Size(97, 51);
 			this.txt3.TabIndex = 6;
@@ -121,7 +123,7 @@
 			// txt4
 			// 
 			this.txt4.Font = new System.Drawing.Font("Cascadia Mono", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.txt4.Location = new System.Drawing.Point(646, 252);
+			this.txt4.Location = new System.Drawing.Point(640, 252);
 			this.txt4.Name = "txt4";
 			this.txt4.Size = new System.Drawing.Size(97, 51);
 			this.txt4.TabIndex = 7;
@@ -134,7 +136,7 @@
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label5.Location = new System.Drawing.Point(51, 74);
+			this.label5.Location = new System.Drawing.Point(45, 74);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(337, 59);
 			this.label5.TabIndex = 9;
@@ -143,7 +145,7 @@
 			// btnAceptar
 			// 
 			this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.btnAceptar.Location = new System.Drawing.Point(235, 370);
+			this.btnAceptar.Location = new System.Drawing.Point(229, 370);
 			this.btnAceptar.Name = "btnAceptar";
 			this.btnAceptar.Size = new System.Drawing.Size(180, 72);
 			this.btnAceptar.TabIndex = 8;
@@ -155,7 +157,7 @@
 			// 
 			this.test.AutoSize = true;
 			this.test.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.test.Location = new System.Drawing.Point(456, 81);
+			this.test.Location = new System.Drawing.Point(450, 81);
 			this.test.Name = "test";
 			this.test.Size = new System.Drawing.Size(0, 51);
 			this.test.TabIndex = 10;
@@ -163,7 +165,7 @@
 			// btnCancelar
 			// 
 			this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.btnCancelar.Location = new System.Drawing.Point(421, 370);
+			this.btnCancelar.Location = new System.Drawing.Point(415, 370);
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.Size = new System.Drawing.Size(180, 72);
 			this.btnCancelar.TabIndex = 11;
@@ -171,24 +173,34 @@
 			this.btnCancelar.UseVisualStyleBackColor = true;
 			this.btnCancelar.Click += new System.EventHandler(this.Cancelar_Click);
 			// 
+			// panel1
+			// 
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel1.Controls.Add(this.label5);
+			this.panel1.Controls.Add(this.label1);
+			this.panel1.Controls.Add(this.btnCancelar);
+			this.panel1.Controls.Add(this.label2);
+			this.panel1.Controls.Add(this.test);
+			this.panel1.Controls.Add(this.label3);
+			this.panel1.Controls.Add(this.label4);
+			this.panel1.Controls.Add(this.btnAceptar);
+			this.panel1.Controls.Add(this.txt1);
+			this.panel1.Controls.Add(this.txt4);
+			this.panel1.Controls.Add(this.txt2);
+			this.panel1.Controls.Add(this.txt3);
+			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Margin = new System.Windows.Forms.Padding(0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(826, 521);
+			this.panel1.TabIndex = 12;
+			// 
 			// DialogAfinacion
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.LightSteelBlue;
 			this.ClientSize = new System.Drawing.Size(826, 521);
-			this.Controls.Add(this.btnCancelar);
-			this.Controls.Add(this.test);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.btnAceptar);
-			this.Controls.Add(this.txt4);
-			this.Controls.Add(this.txt3);
-			this.Controls.Add(this.txt2);
-			this.Controls.Add(this.txt1);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.HelpButton = true;
 			this.MaximizeBox = false;
@@ -200,9 +212,9 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "DialogAfinacion";
 			this.TopMost = true;
-			this.Load += new System.EventHandler(this.DialogAfinacion_Load);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -220,5 +232,6 @@
 		private Button btnAceptar;
 		private Label test;
 		private Button btnCancelar;
+		private Panel panel1;
 	}
 }
