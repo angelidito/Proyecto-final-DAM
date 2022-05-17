@@ -11,18 +11,19 @@ namespace Conoce_tu_ukelele.Modelos
 	{
 		private static Afinacion afinacion = new Afinacion();
 		private static int[,] mastil = new int[4, 19];
-		private static FormMastil? form = null;
+		private static List<FormMastil> formsMastils = new();
 
-		public Ukelele(FormMastil form)
+
+		public static void Initialize(FormMastil form)
 		{
 			SetMastil();
-			Ukelele.form = form;
+			formsMastils.Add(form);
 		}
 
-		public Ukelele(Afinacion afinacion)
-		{
-			SetAfinacion(afinacion);
-		}
+		//public Ukelele(Afinacion afinacion)
+		//{
+		//	SetAfinacion(afinacion);
+		//}
 
 		public static Afinacion Afinacion
 		{
@@ -34,7 +35,11 @@ namespace Conoce_tu_ukelele.Modelos
 		{
 			Ukelele.afinacion = afinacion;
 			SetMastil();
-			form?.AfinacionCambiada();
+
+			foreach (FormMastil form in formsMastils)
+			{
+				form.AfinacionCambiada();
+			}
 		}
 
 		public static int[,] Mastil

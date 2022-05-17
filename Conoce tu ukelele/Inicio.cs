@@ -14,8 +14,8 @@ namespace Conoce_tu_ukelele.Forms
 {
 	public partial class Inicio : Form
 	{
-		private static FormAcordes formAcordes = new FormAcordes();
-		private static FormEscalas formEscalas = new FormEscalas();
+		public static FormAcordes formAcordes = new FormAcordes();
+		public static FormEscalas formEscalas = new FormEscalas();
 		private static IconMenuItem MenuActivo = null;
 		private static Form FormularioActivo = null;
 

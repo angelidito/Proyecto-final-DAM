@@ -347,8 +347,8 @@ namespace Conoce_tu_ukelele.Forms
 					notas.Count,
 					exceso,
 					textoAux,
-					notas[1],
-					notas[2]
+					NotaParser.GetNota("", notas[1]),
+					NotaParser.GetNota("", notas[2])
 					);
 			}
 

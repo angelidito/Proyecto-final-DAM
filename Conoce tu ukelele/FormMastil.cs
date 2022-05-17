@@ -38,7 +38,8 @@ namespace Conoce_tu_ukelele.Forms
 			this.colores = colores;
 			//BtnFocoOnClick.Visible = false;
 			//BtnFocoOnClick.Enabled = false;
-			ukelele = new Ukelele(this);
+			Ukelele.Initialize(this);
+			//ukelele = new Ukelele(this);
 			btn_sostenidos.Text = "♯"; // ♭
 			sostenidos = true;
 			SetNotas();
@@ -275,6 +276,7 @@ namespace Conoce_tu_ukelele.Forms
 			Label textBox = (Label)sender;
 			int cuerda = -1;
 			int traste = -1;
+
 
 			// Buscamos la etiqueta en la que se ha hecho click
 			for (int i = 0; i < 4 && cuerda == -1; i++)
