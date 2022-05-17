@@ -14,13 +14,15 @@ namespace Conoce_tu_ukelele.Forms
 {
 	public partial class Inicio : Form
 	{
+		private static FormAcordes formAcordes = new FormAcordes();
+		private static FormEscalas formEscalas = new FormEscalas();
 		private static IconMenuItem MenuActivo = null;
 		private static Form FormularioActivo = null;
 
 		public Inicio()
 		{
 			InitializeComponent();
-
+			AbrirFormulario(MenuItemAcordes, formAcordes);
 			//int k = 1;
 			//for (int i = 0; i < 4; i++)
 			//{
@@ -30,18 +32,9 @@ namespace Conoce_tu_ukelele.Forms
 			//	}
 			//}
 		}
-
-		//public static int[,] GetThisMastil()
-		//{
-
-		//}
-
-
 		private void Inicio_Load(object sender, EventArgs e)
 		{
-
 		}
-
 		private void AbrirFormulario(IconMenuItem menu, Form formulario)
 		{
 			if (MenuActivo != null)
@@ -53,8 +46,10 @@ namespace Conoce_tu_ukelele.Forms
 
 			if (FormularioActivo != null)
 			{
-				FormularioActivo.Close();
+				//FormularioActivo.Close();
+				FormularioActivo.Hide();
 			}
+
 
 			FormularioActivo = formulario;
 			formulario.TopLevel = false;
@@ -65,35 +60,29 @@ namespace Conoce_tu_ukelele.Forms
 			formulario.Show();
 		}
 
-		//private void menuusarios_Click(object sender, EventArgs e)
-		//{
-		//    AbrirFormulario(MenuAcordes, new frmProductos());
-		//}
-
-
-
 		private void salirbtn_Click(object sender, EventArgs e)
 		{
+			formAcordes.Close();
+			formEscalas.Close();
 			this.Close();
 		}
 
 		private void MenuAcordes_Click(object sender, EventArgs e)
 		{
-			AbrirFormulario(MenuItemAcordes, new FormAcordes());
+			AbrirFormulario(MenuItemAcordes, formAcordes);
 		}
 
 		private void MenuEscalas_Click(object sender, EventArgs e)
 		{
-			AbrirFormulario(MenuItemEscalas, new FormEscalas());
-
+			AbrirFormulario(MenuItemEscalas, formEscalas);
 		}
 
 		private void MenuItemAfinacion_Click(object sender, EventArgs e)
 		{
-
 			DialogAfinacion dialog = new();
 			dialog.ShowDialog();
-
 		}
+
+
 	}
 }

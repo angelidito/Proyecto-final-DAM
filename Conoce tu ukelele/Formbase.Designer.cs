@@ -40,7 +40,6 @@ namespace Conoce_tu_ukelele
 			this.label1.Size = new System.Drawing.Size(78, 32);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "label1";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// Formbase
 			// 
