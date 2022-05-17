@@ -21,3 +21,7 @@ Conoce tu ukelele/obj/project.nuget.cache
 Conoce tu ukelele/.vs/Conoce tu ukelele/DesignTimeBuild/.dtbcache.v2
 .DS_Store
 .DS_Store
+*.v2
+Conoce tu ukelele/.vs/Conoce tu ukelele/v17/.suo
+*.cache
+~$Presentación del proyecto.pptx
