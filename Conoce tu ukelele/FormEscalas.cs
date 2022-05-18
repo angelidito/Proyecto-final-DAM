@@ -1,14 +1,4 @@
-﻿using Conoce_tu_ukelele.Forms;
-using Conoce_tu_ukelele.Modelos;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Conoce_tu_ukelele.Modelos;
 
 namespace Conoce_tu_ukelele.Forms
 {
@@ -27,7 +17,7 @@ namespace Conoce_tu_ukelele.Forms
 		private static readonly int[] MenordeBlues = { 0, 3, 5, 6, 7, 10 };
 		private static readonly int[] Menorarmonica = { 0, 2, 3, 5, 7, 8, 11 };
 		private static readonly int[] MenordeJazz = { 0, 2, 3, 5, 7, 9, 11 };
-		private static readonly int[] Mixolidia =   { 0, 2, 4, 5, 7, 9, 10 };
+		private static readonly int[] Mixolidia = { 0, 2, 4, 5, 7, 9, 10 };
 		private static readonly int[] Klexmer = { 0, 1, 4, 5, 7, 8, 10 };
 		private static readonly int[] Japonesa = { 0, 1, 5, 7, 8 };
 		private static readonly int[] Cromatica = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
@@ -108,7 +98,7 @@ namespace Conoce_tu_ukelele.Forms
 			txtNotas.Clear();
 			txtInfo.Clear();
 
-			txtInfo.Text ="Mostrando la escala " + nombreEscala+" de "+ raiz + ".";
+			txtInfo.Text = "Mostrando la escala " + nombreEscala + " de " + raiz + ".";
 			//escalas[escala];
 			try
 			{

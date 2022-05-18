@@ -1,0 +1,6 @@
+\\Mac\Home\Documents\Conoce tu ukelele\Conoce tu ukelele.exe
+\\Mac\Home\Documents\Conoce tu ukelele\Conoce tu ukelele.dll
+\\Mac\Home\Documents\Conoce tu ukelele\Conoce tu ukelele.deps.json
+\\Mac\Home\Documents\Conoce tu ukelele\Conoce tu ukelele.runtimeconfig.json
+\\Mac\Home\Documents\Conoce tu ukelele\Conoce tu ukelele.pdb
+\\Mac\Home\Documents\Conoce tu ukelele\FontAwesome.Sharp.dll

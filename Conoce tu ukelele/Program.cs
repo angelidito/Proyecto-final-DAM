@@ -2,18 +2,18 @@ using Conoce_tu_ukelele.Forms;
 
 namespace Conoce_tu_ukelele
 {
-    internal static class Program
-    {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Inicio());
-        }
-    }
+	internal static class Program
+	{
+		/// <summary>
+		///  The main entry point for the application.
+		/// </summary>
+		[STAThread]
+		static void Main()
+		{
+			// To customize application configuration such as set high DPI settings or default font,
+			// see https://aka.ms/applicationconfiguration.
+			ApplicationConfiguration.Initialize();
+			Application.Run(new Inicio());
+		}
+	}
 }

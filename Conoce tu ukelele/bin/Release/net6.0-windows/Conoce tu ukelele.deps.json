@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Conoce tu ukelele/1.0.0": {
+        "dependencies": {
+          "FontAwesome.Sharp": "5.15.4.0"
+        },
+        "runtime": {
+          "Conoce tu ukelele.dll": {}
+        }
+      },
+      "FontAwesome.Sharp/5.15.4.0": {
+        "runtime": {
+          "FontAwesome.Sharp.dll": {
+            "assemblyVersion": "5.15.4.0",
+            "fileVersion": "5.15.4.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Conoce tu ukelele/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FontAwesome.Sharp/5.15.4.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
